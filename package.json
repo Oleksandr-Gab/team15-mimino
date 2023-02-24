@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "team15-mimino",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/<REPO>/",
+    "build": "vite build --base=/team15-mimino/",
     "preview": "vite preview"
   },
   "devDependencies": {
