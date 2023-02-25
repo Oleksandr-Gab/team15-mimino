@@ -1,0 +1,16 @@
+@import url(./utils/variat.css);
+
+@import url(./base/common.css);
+@import url(./base/reset.css);
+
+@import url(./components/container.css);
+@import url(./components/btn.css);
+
+@import url(./layout/header.css);
+@import url(./layout/hero.css);
+@import url(./layout/about.css);
+@import url(./layout/restaurant-details.css);
+@import url(./layout/welcom.css);
+@import url(./layout/hotel-details.css);
+@import url(./layout/location-contacts.css);
+@import url(./layout/footer.css);
