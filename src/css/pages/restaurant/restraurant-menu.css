@@ -1,10 +1,25 @@
 .restaurant-menu {
+  display: none;
 }
 
 .restaurant-menu-cont {
   background-color: #121212;
+  
+}
+.restaurant-menu-cont-all{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
+.menu-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: 515px;
+}
 .restaurant-menu-title {
   color: #f7f7f7;
   font-size: 32px;
@@ -13,7 +28,7 @@
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 36px;
 }
 
 .restaurant-menu-sub-title {
@@ -27,10 +42,24 @@
 }
 
 .menu-list {
+  
 }
 
 .menu-list-cont {
+  
 }
+
+.menu-ingredient::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: -14px;
+  
+}
+
 .menu-name {
   color: #f7f7f7;
   font-weight: 500;
@@ -40,6 +69,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
+  
 }
 
 .menu-ingredient {
@@ -50,6 +80,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 29px;
+  position: relative;
+  
+  
 }
 
 .menu-weight {
@@ -67,12 +100,52 @@
 }
 
 .slick {
-  padding: 80px 0;
+  padding: 40px 0 64px 0;
   background-color: #121212;
 }
 
+.slick-current{
+}
+.single-item{
+  
+}
+.slick-slide { 
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 112px;
+}
 .icon-bnt-prevArrow {
 }
+
+.menu-name-little{
+color: #f7f7f7;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+display: flex;
+justify-content: space-between;
+margin-bottom: 30px;
+position: relative;
+}
+
+.menu-name-little::before{
+content: "";
+background-color: rgba(255, 255, 255, 0.5);
+position: absolute;
+height: 1px;
+width: 100%;
+left: 0;
+bottom: -14px;
+}
+
+
+
+
+
+
+
+
 
 .slick-cont {
   /* display: flex; */
@@ -89,3 +162,75 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+/* Mobile *//* Mobile *//* Mobile */
+
+@media screen and (min-width: 375px) 
+{
+
+}
+
+
+
+
+
+/* Tablet *//* Tablet *//* Tablet */
+@media screen and (min-width: 768px) 
+{
+
+.slick-slide { 
+  padding-bottom: 129px;
+}  
+.slick {
+  padding: 80px 0;
+}
+.restaurant-menu-title{
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 64px;
+}
+.restaurant-menu-sub-title{
+  font-size: 24px;
+  line-height: 1;
+}
+.menu-name{
+  font-size: 18px;
+  line-height: 1.33;
+}
+.menu-ingredient {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.menu-weight {
+  font-size: 14px;
+  line-height: 1.29;
+}
+.menu-price {
+  font-size: 18px;
+  line-height: 1.33;
+}
+.menu-btn {
+  display: block;
+}
+
+  /* Desktop *//* Desktop *//* Desktop */
+}
+@media screen and (min-width: 
+1440px) {
+
+  .restaurant-menu {
+  display:contents;
+}
+
+.slick-cont{
+  display: none;
+}
+
+  }
