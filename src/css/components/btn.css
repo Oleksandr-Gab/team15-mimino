@@ -4,8 +4,8 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--light-color);
-  border: 0.8px solid var(--light-color);
+  color: var(--brand-color);
+  border: 0.8px solid var(--brand-color);
   border-radius: 32px;
   padding: 8px 18px;
   background-color: transparent;
@@ -13,6 +13,11 @@
 
 .btn:is(:hover, :focus) {
   background-color: var(--brand-color);
+  color: var(--light-color);
+}
+
+.bnt-black {
+  border: 0.8px solid var(--light-color);
 }
 
 .btn-black:is(:hover, :focus) {
