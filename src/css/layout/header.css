@@ -1,7 +1,6 @@
 .header {
-  background-color: red;
+  background-color: #121212;
 }
-
 .header-container {
   display: flex;
   align-items: center;
@@ -11,7 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 83px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .header-nav {
@@ -22,93 +22,70 @@
   margin-bottom: 25px;
   padding: 0px;
   border: 0px;
-  /* background-color: transparent; */
-  background-color: green;
-  color: green;
+  background-color: transparent;
 }
 .menu-open-icon {
-  fill: blue;
-  /* background-color: black; */
+  stroke: #f6f6f6;
 }
 .logo-name {
-  margin-top: 20px;
   margin-bottom: 3px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.57;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: black;
+  color: #f7f7f7;
 }
 .logo-text {
-  margin-bottom: 20px;
   font-size: 6px;
   line-height: 1.33;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #d8d7d7;
 }
-.header-social-list {
-  /* display: none; */
-}
-/* .header-nav-list {
-  display: none;
-} */
-/* @media (min-width: 375px) {
-  .container {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */
+
 @media (max-width: 767px) {
   .header-logo {
     margin-left: 83px;
   }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-left: auto;
-    margin-right: auto;
+  .header-social-list {
+    display: none;
   }
+  .header-nav-list {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
   .header-social-list {
     display: flex;
     align-items: center;
-
     gap: 14px;
   }
+  .header-social-list {
+    margin-left: auto;
+  }
   .header-social-icon {
-    background-color: blueviolet;
-    stroke: #ffffff;
+    stroke: white;
   }
   .header-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
-  .menu-open-btn {
+  .header-nav-list {
     display: none;
-  }
-  .header-logo {
-    margin-left: auto;
   }
 }
 @media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-
   .header-nav-list {
     display: flex;
     flex-direction: row;
     gap: 32px;
     justify-content: space-between;
     margin-right: 370px;
+  }
+  .menu-open-btn {
+    display: none;
   }
   .header-nav-link {
     font-size: 14px;
