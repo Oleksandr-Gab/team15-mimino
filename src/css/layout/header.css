@@ -13,10 +13,6 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
-.header-nav {
-}
-
 .menu-open-btn {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -25,7 +21,7 @@
   background-color: transparent;
 }
 .menu-open-icon {
-  stroke: #f6f6f6;
+  stroke: white;
 }
 .logo-name {
   margin-bottom: 3px;
@@ -61,9 +57,7 @@
     align-items: center;
     gap: 14px;
   }
-  .header-social-list {
-    margin-left: auto;
-  }
+
   .header-social-icon {
     stroke: white;
   }
