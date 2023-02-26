@@ -5,3 +5,10 @@ body {
   font-weight: 400;
   background-color: var(--light-color);
 }
+
+.is-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -18,8 +18,9 @@
   color: var(--light-color);
 }
 
-.bnt-black {
+.btn-black {
   border: 0.8px solid var(--light-color);
+  color: var(--light-color);
 }
 
 .btn-black:is(:hover, :focus) {
