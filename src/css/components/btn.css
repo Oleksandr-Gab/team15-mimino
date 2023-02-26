@@ -12,6 +12,7 @@
 }
 
 .btn:is(:hover, :focus) {
+  color:#fff;
   background-color: var(--brand-color);
 }
 
