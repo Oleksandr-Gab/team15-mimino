@@ -1,5 +1,12 @@
+.main-restaurants-details{
+padding-top: 64px;
+padding-bottom: 64px;
+}
 .restaurant-det{
-    margin-top: 64px;
+
+padding: 0 20px;
+margin-left: auto;
+margin-right: auto;
 }
 .title-res{
 font-weight: 500;
@@ -9,15 +16,120 @@ letter-spacing: -0.02em;
 text-transform: uppercase;
 color: #121212;
 }
-.text-r{    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(18/14);
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #121212;
+.text-rest{    
+width: 221px;
+font-weight: 500;
+font-size: 14px;
+line-height: calc(18/14);
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #121212;
 margin-top: 24px;
 margin-bottom: 32px;}
-.img-res-det{
+
+.content-re{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 82px;
+}
+.content-rest{
+    width: 100%;
+}
+
+.btn {
+    color: var(--brand-color);
+    border: 0.8px solid var(--brand-color);
+    }
+
+.btn-rest{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:12px;
+    }
+
+
+@media screen and (min-width: 375px){
+    .container{
+    width: 355px;}
+
 
 }
+
+
+
+@media screen and (min-width: 768px){
+.container{
+    width: 704px;
+}
+
+.main-restaurants-details{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.res-parag{
+display: flex;
+align-items: center;
+margin-bottom: 80px;
+}
+.title-res{
+font-size: 68px;
+margin-right: 32px;
+}
+.text-rest{
+    margin: 0;
+}
+.content-re{
+    gap:32px;
+margin-bottom: 108px;
+}
+
+.btn{
+    padding: 8px 24px;
+}
+
+.btn-rest{
+    gap:14px;
+}
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        width: 1376px;
+    }
+    
+    .main-restaurants-details{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .res-parag{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    }
+    .title-res{
+    font-size: 68px;
+    margin-right: 32px;
+    }
+    .text-rest{
+        margin: 0;
+    }
+    .content-re{
+        gap:32px;
+    margin-bottom: 108px;
+    }
+    
+    .btn{
+        padding: 8px 24px;
+    }
+    
+    .btn-rest{
+        gap:14px;
+    }
+    }
+
+    @media screen and (max-width: 1440px){
+    .content-none{
+        display: none;
+    }
+    }
