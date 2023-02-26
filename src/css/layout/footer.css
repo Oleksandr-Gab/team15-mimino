@@ -1,0 +1,116 @@
+.footer{
+background-color:  #F6F6F6;
+}
+.footer-container {
+display: flex;
+align-items: center;
+border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-bottom: 64px;
+  margin-top: 24px;
+}
+.footer-social-list{
+  margin-bottom: 64px;
+  margin-top: 24px;
+}
+
+.logo-name{
+width: 93px;
+height: 24px;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: #121212;
+}
+.logo-text{
+width: 149px;
+height: 10px;
+font-weight: 400;
+font-size: 8px;
+line-height: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: #121212;
+}
+
+.footer-nav-link {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #121212;
+  }
+@media (max-width: 767px) {
+    .footer-logo {
+      margin-left: auto;
+      margin-top: 24px;
+    }
+    .footer-social-list {
+      display: flex;
+      gap: 20px;
+      margin-left: auto;
+    }
+    .footer-nav-list {
+      display: none;
+    }
+    .footer-social-icon {
+        fill: #F6F6F6;
+        stroke: black;
+    }
+    
+  }
+  @media (min-width: 768px) {
+    .footer-social-list {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-left: auto;
+    }
+
+    .footer-social-icon {
+        fill: #F6F6F6;
+        stroke: black;
+    }
+    .footer-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-nav-list {
+      display: none;
+    }
+  }
+  @media (min-width: 1440px) {
+    .footer-nav-list {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      justify-content: space-between;
+      margin-right: 370px;
+      margin-bottom: 44px;
+    }
+    
+    .footer-nav-link {
+      font-size: 14px;
+      line-height: 1.29;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #121212;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-nav {
+      display: flex;
+      align-items: center;
+    }
+  }

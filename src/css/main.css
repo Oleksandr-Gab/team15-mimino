@@ -10,7 +10,7 @@
 @import url('./layout/hero.css');
 @import url('./layout/about.css');
 @import url('./layout/restaurant-details.css');
-@import url('./layout/welcom.css');
+@import url('./layout/welcome.css');
 @import url('./layout/hotel-details.css');
 @import url('./layout/location-contacts.css');
 @import url('./layout/footer.css');
@@ -26,3 +26,5 @@
 /* кімнати */
 @import url('./pages/room/hero.css');
 @import url('./pages/room/amenities.css');
+/* модалки */
+@import url('./modal/modal.css');
