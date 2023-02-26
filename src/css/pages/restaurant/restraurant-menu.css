@@ -1,0 +1,65 @@
+.restaurant-menu{
+/* display: none; */
+}
+
+.restaurant-menu-cont{
+    background-color: #5f2828;
+}
+
+.restaurant-menu-title{
+color: #F7F7F7;
+font-size: 32px;
+line-height: 1.25;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+
+.restaurant-menu-sub-title{
+color: #F7F7F7;
+font-style: italic;
+font-size: 18px;
+line-height: 1.33x;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+}
+
+.menu-name{
+color: #F7F7F7;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+}
+
+.menu-ingredient{
+font-size: 10px;
+line-height: 1.4;
+letter-spacing: 0.18em;
+color: rgba(216, 215, 215, 0.5);
+}
+
+.menu-weight{
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: -0.02em;
+color: #D8D7D7;
+
+}
+.menu-price{
+color: #F7F7F7;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+
+}
+
+.slick{
+    padding: 200px 0;
+    background-color: rgb(93, 250, 250);
+}
+
+.icon-bnt-prevArrow{
+}
+
