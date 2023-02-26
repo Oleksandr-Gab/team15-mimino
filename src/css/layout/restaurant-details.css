@@ -1,0 +1,23 @@
+.restaurant-det{
+    margin-top: 64px;
+}
+.title-res{
+font-weight: 500;
+font-size: 40px;
+line-height: 1;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #121212;
+}
+.text-r{    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(18/14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #121212;
+margin-top: 24px;
+margin-bottom: 32px;}
+.img-res-det{
+
+}
