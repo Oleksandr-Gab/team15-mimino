@@ -28,7 +28,9 @@ text-transform: uppercase;
 color: var(--brand-color);
 margin-top: 24px;
 }
+.slick-active{
 
+}
 
 .content-rest{
     width: 100%;
