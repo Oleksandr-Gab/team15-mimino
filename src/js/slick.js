@@ -1,8 +1,5 @@
 $('.single-item').slick({
   dots: false,
-  //   prevArrow: 'bnt-prevArrow',
-  //   nextArrow: 'bnt-nextArrow',
-  
-  
-  
+  prevArrow: '.menu-slick-icons-prevArrow',
+  nextArrow: '.menu-slick-icons-nextArrow',
 });
