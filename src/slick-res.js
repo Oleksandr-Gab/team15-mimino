@@ -3,8 +3,8 @@ $('.responsive').slick({
     infinite: true,
     arrows:false,
     speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     centerMode: false,
     centerPadding: '0',
     responsive: [
