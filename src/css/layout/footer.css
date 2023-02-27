@@ -28,9 +28,10 @@ line-height: 1.2;
 letter-spacing: 0.18em;
 text-transform: uppercase;
 color: #121212;
+
 }
 .logo-text{
-width: 149px;
+/* width: 149px; */
 height: 10px;
 font-weight: 400;
 font-size: 8px;
@@ -75,8 +76,8 @@ color: #121212;
     }
 
     .footer-social-icon {
-        fill: #F6F6F6;
-        stroke: black;
+      fill: #F6F6F6;
+      stroke: black;
     }
     .footer-container {
       display: flex;
@@ -95,6 +96,11 @@ color: #121212;
       justify-content: space-between;
       margin-right: 370px;
       margin-bottom: 44px;
+    }
+    .logo-name{
+     text-align: center;
+     margin-right: auto;
+     margin-left: auto;
     }
     
     .footer-nav-link {
