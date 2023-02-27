@@ -1,6 +1,6 @@
 .main-restaurants-details {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
 }
 .res-parag {
   margin-bottom: 32px;
@@ -48,7 +48,7 @@
 
 .main-restaurants-details {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .res-parag {
   display: flex;
@@ -78,7 +78,7 @@
 
   .main-restaurants-details {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 63px;
   }
   .res-parag {
     display: flex;
