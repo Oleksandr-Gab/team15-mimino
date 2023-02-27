@@ -1,0 +1,50 @@
+.location-text{
+font-weight: 500;
+font-size: 40px;
+line-height: 1.0;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+margin-bottom: 32px;
+}
+.map-text{
+font-weight: 400;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+.contacts-list-h3{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;   
+letter-spacing: -0.02em;
+text-transform: uppercase;
+margin-bottom: 12px;     
+}
+.contacts-item{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;   
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;   
+}
+
+@media (max-width: 767px){
+.contacts-list{
+margin-top: 28px;
+}
+
+}
+@media (min-width: 768px) {
+.location-text{
+margin-bottom: 40px;
+}
+.location-contacts{
+display: flex;
+}
+.contacts-list{
+margin-left: auto;
+margin-top: 0;   
+}
+}

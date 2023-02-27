@@ -1,12 +1,29 @@
-.main-restaurants-details{
-padding-top: 64px;
-padding-bottom: 64px;
+.main-restaurants-details {
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
-.container{
-padding: 0 20px;
-margin-left: auto;
-margin-right: auto;
+.res-parag {
+  margin-bottom: 32px;
 }
+.title-res {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+}
+.text-rest {
+  width: 221px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+  margin-top: 24px;
+}
+
 .res-parag{
     margin-bottom: 32px;
 }
@@ -29,89 +46,65 @@ color: var(--brand-color);
 margin-top: 24px;
 }
 .slick-active{
-
 }
-
 .content-rest{
     width: 100%;
+.content-rest:not(:last-child) {
+  margin-right: 20px;
 }
 
-.content-rest:not(:last-child){
-    margin-right: 20px;
+.btn-rest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 82px;
 }
 
-.btn {
-    color: var(--brand-color);
-    border: 0.8px solid var(--brand-color);
-    }
-
-.btn-rest{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    gap:12px;
-    margin-top: 82px;
-    }
-    
-
-@media screen and (min-width: 375px){
-    .container{
-    width: 355px;}
-
+@media screen and (min-width: 375px) {
 }
 
-
-
-@media screen and (min-width: 768px){
-.container{
-    width: 768px;
+@media screen and (min-width: 768px) {
+.main-restaurants-details {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.res-parag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.title-res {
+  font-size: 68px;
+  margin-right: 32px;
+}
+.text-rest {
+  margin: 0;
 }
 
-.main-restaurants-details{
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.res-parag{
-display: flex;
-align-items: center;
-margin-bottom: 80px;
-}
-.title-res{
-font-size: 68px;
-margin-right: 32px;
-}
-.text-rest{
-    margin: 0;
+.content-rest:not(:last-child) {
+  margin-right: 32px;
 }
 
-.content-rest:not(:last-child){
-    margin-right: 32px;
-}
-.btn{
-    padding: 8px 24px;
+.btn-rest {
+  gap: 14px;
 }
 
-.btn-rest{
-    gap:14px;
-}
-}
+@media screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+  }
 
-@media screen and (min-width: 1200px){
-    .container{
-        width: 1200px;
-        position: relative;
-    }
-    
-    .main-restaurants-details{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    .res-parag{
+  .main-restaurants-details {
+    padding-top: 100px;
+    padding-bottom: 63px;
+  }
+  .res-parag {
     display: flex;
     align-items: center;
     margin-bottom: 125px;
-    }
-    .title-res{
+  }
+  .title-res {
     font-size: 68px;
     margin-right: 32px;
     }
@@ -133,3 +126,4 @@ margin-right: 32px;
     }
     }
     
+

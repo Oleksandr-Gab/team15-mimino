@@ -1,16 +1,30 @@
-@import url(./utils/variat.css);
+@import url('./utils/variat.css');
 
-@import url(./base/common.css);
-@import url(./base/reset.css);
+@import url('./base/common.css');
+@import url('./base/reset.css');
 
-@import url(./components/container.css);
-@import url(./components/btn.css);
-
-@import url(./layout/header.css);
-@import url(./layout/hero.css);
-@import url(./layout/about.css);
-@import url(./layout/restaurant-details.css);
-@import url(./layout/welcom.css);
-@import url(./layout/hotel-details.css);
-@import url(./layout/location-contacts.css);
-@import url(./layout/footer.css);
+@import url('./components/container.css');
+@import url('./components/btn.css');
+/* головна сторінка */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about.css');
+@import url('./layout/restaurant-details.css');
+@import url('./layout/welcome.css');
+@import url('./layout/hotel-details.css');
+@import url('./layout/location-contacts.css');
+@import url('./layout/footer.css');
+/* готель */
+@import url('./pages/hotel/hero.css');
+@import url('./pages/hotel/double-luxury.css');
+@import url('./pages/hotel/triple.css');
+@import url('./pages/hotel/four-seater.css');
+/* ресторан */
+@import url('./pages/restaurant/hero.css');
+@import url('./pages/restaurant/about.css');
+@import url('./pages/restaurant/restraurant-menu.css');
+/* кімнати */
+@import url('./pages/room/hero.css');
+@import url('./pages/room/amenities.css');
+/* модалки */
+@import url('./modal/modal.css');
