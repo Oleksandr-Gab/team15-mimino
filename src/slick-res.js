@@ -3,6 +3,8 @@ $('.responsive').slick({
     infinite: true,
     arrows:false,
     speed: 300,
+    prewArrow:"slik-btn",
+    nextArrow:"slik-btn2",
     slidesToShow: 4,
     slidesToScroll: 4,
     centerMode: false,
@@ -11,8 +13,8 @@ $('.responsive').slick({
     {
         breakpoint: 1200,
         settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
         }
@@ -21,14 +23,14 @@ $('.responsive').slick({
         breakpoint: 768,
         settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
         }
     },
     {
         breakpoint: 375,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       }
       

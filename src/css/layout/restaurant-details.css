@@ -37,9 +37,7 @@ margin-top: 24px;
 .content-rest:not(:last-child){
     margin-right: 20px;
 }
-.content-none{
-    display: none;
-}
+
 .btn {
     color: var(--brand-color);
     border: 0.8px solid var(--brand-color);
