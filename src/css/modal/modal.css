@@ -1,0 +1,39 @@
+.modal {
+  margin: 0 auto;
+  background-color: var(--brand-color);
+}
+
+.modal-container {
+  margin: 0 auto;
+  max-width: 335px;
+  padding: 24px;
+  outline: 1px solid tomato;
+  position: relative;
+}
+
+.modal-close-btn {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.close-svg {
+  fill: var(--light-color);
+}
+.modal-name {
+  color: var(--light-color);
+}
+
+.modal-input {
+  width: 100%;
+}
+.modal-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}

@@ -26,3 +26,5 @@
 /* кімнати */
 @import url('./pages/room/hero.css');
 @import url('./pages/room/amenities.css');
+/* модалки */
+@import url('./modal/modal.css');

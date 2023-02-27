@@ -1,23 +1,104 @@
-.restaurant-det{
-    margin-top: 64px;
+.main-restaurants-details {
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
-.title-res{
-font-weight: 500;
-font-size: 40px;
-line-height: 1;
-letter-spacing: -0.02em;
-text-transform: uppercase;
-color: #121212;
+.res-parag {
+  margin-bottom: 32px;
 }
-.text-r{    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(18/14);
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #121212;
-margin-top: 24px;
-margin-bottom: 32px;}
-.img-res-det{
+.title-res {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+}
+.text-rest {
+  width: 221px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+  margin-top: 24px;
+}
 
+.content-rest {
+  width: 100%;
+}
+
+.content-rest:not(:last-child) {
+  margin-right: 20px;
+}
+
+.btn-rest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 82px;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+.main-restaurants-details {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.res-parag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.title-res {
+  font-size: 68px;
+  margin-right: 32px;
+}
+.text-rest {
+  margin: 0;
+}
+
+.content-rest:not(:last-child) {
+  margin-right: 32px;
+}
+
+.btn-rest {
+  gap: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+  }
+
+  .main-restaurants-details {
+    padding-top: 100px;
+    padding-bottom: 63px;
+  }
+  .res-parag {
+    display: flex;
+    align-items: center;
+    margin-bottom: 125px;
+  }
+  .title-res {
+    font-size: 68px;
+    margin-right: 32px;
+  }
+  .text-rest {
+    margin: 0;
+  }
+
+  .btn-rest {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    transform: translate(0, 0);
+    gap: 24px;
+    margin-top: 0;
+  }
 }
