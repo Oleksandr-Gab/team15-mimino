@@ -1,0 +1,65 @@
+.room-hero {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    background-color: #f7f7f7;
+}
+.hero-room-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height:1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color:var(--brand-color);
+}
+
+.luxary {
+    font-style: italic;
+}
+.room-hero-but {
+    margin-bottom: 40px;
+}
+.pics-slides:not(:last-child){
+    margin-right: 20px;
+}
+.room-arrows {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+.room-slider-arrows {
+    display: flex;
+}
+.arrow-prev {
+    margin-right: 32px ;
+}
+.arrow-prev,
+.arrow-next {
+    width: 36px;
+    height: 36px;
+    background-color: #f7f7f7;
+    border: none;
+}
+.room-hero-desc {
+    margin-top: 40px;
+    max-width: 289px;
+    font-size: 14px;
+    line-height:1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color:var(--brand-color);
+}
+@media screen and (min-width: 768px) {
+    .hero-room-title {
+        margin-bottom: 18px;
+        font-size: 60px;
+    }
+    .room-slider {
+        width:768px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .hero-room-title {
+        margin-bottom: 18px;
+        font-size: 80px;
+    }
+}
