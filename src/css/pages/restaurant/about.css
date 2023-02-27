@@ -1,0 +1,149 @@
+.restaurant-about {
+    background: #D8D8D8;
+    
+
+}
+
+.restaurant-about_container {
+
+    padding-left: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+   
+
+        @media screen and (min-width: 375px) {
+
+        
+            padding-left: 32px;
+            width: 375px;
+          
+        }
+    
+        @media screen and (min-width: 768px) {
+    
+            width: 768px;
+            padding-left: 36px;
+           
+        }
+    
+        @media screen and (min-width: 1440px) {
+    
+           width: 1440px;
+           padding-left: 737px;
+    
+        }
+}
+
+.res-about-slick-container {
+
+margin-left: auto;
+width: 100%;
+
+        @media screen and (min-width: 768px) {
+
+            width: 768px;
+            padding-left: 36px;
+           
+        }
+    
+        @media screen and (min-width: 1440px) {
+    
+            max-width: 737px;
+            padding-left: 737px;
+            
+            
+        }
+}
+
+
+
+
+.restaurant-about-options > h1 {
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px; 
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    padding-top: 40px;
+    margin-bottom: 20px;
+    
+        @media screen and (min-width: 768px) {
+    
+
+    font-size: 80px;
+    line-height: 80px;
+        }
+    
+        @media screen and (min-width: 1440px) {
+    font-size: 90px;
+    line-height: 90px;
+    
+
+        }
+
+}
+
+.restaurant_btn {
+
+    margin-bottom: 40px;
+}
+
+.restaurant_btn:last-child {
+
+    margin-left: 12px;
+}
+
+
+
+
+.res-about-carousel-image:not(:last-child) {
+
+  margin-right: 0;
+}
+
+
+
+.res-about_call-to-action {
+
+
+    width: 338px;
+    margin-right: auto;  
+}
+
+
+.res-about_call-to-action > p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #121212;
+            margin-bottom: 0;
+
+
+    @media screen and (min-width: 375px) {
+    
+
+            margin-top: 100px;
+        
+
+        }
+    
+        @media screen and (min-width: 768px) {
+
+            margin-top:40px;
+   
+        }
+    
+        @media screen and (min-width: 1440px) {
+    
+            width: 436px;
+            height: 580px;
+        }
+
+
+}
+
