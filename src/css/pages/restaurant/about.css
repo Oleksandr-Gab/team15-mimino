@@ -87,7 +87,7 @@ transform: translate(+25%, -50%);
 }
 .about-text-cont-2{
 margin-top: 54px;
-margin-bottom: 64px;
+margin-bottom: 40px;
 display: flex;
 flex-direction: column;
 gap: 14px
@@ -104,5 +104,6 @@ width: 263px;
 }
 
 .card4{
-
+width: 335px;
+height: 309px;
 }
