@@ -58,6 +58,7 @@
 .restaurant-hero_picture-container {
 
     width: 1376px;
+    flex-direction: row;
 
         } 
     }
