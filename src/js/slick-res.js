@@ -34,3 +34,38 @@ $('.responsive').slick({
       
     ]
   });
+  
+  $('.hotel-hero-slider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: true,
+    responsive: [
+      {
+          breakpoint: 1600,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+          }
+      },
+      {
+          breakpoint: 768,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+          }
+      },
+      {
+          breakpoint: 375,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        
+      ]
+  });
