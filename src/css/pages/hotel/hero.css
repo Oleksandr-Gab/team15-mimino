@@ -47,7 +47,7 @@ gap: 14px;
 margin-bottom: 54px;
     }
 .text-hero-hotel{
-    width: 338px;
+    max-width: 338px;
 }
 }
 
@@ -70,9 +70,27 @@ margin-bottom: 54px;
     }
 .text-hero-hotel{
     width: 338px;
+    
 }
 .hotel-hero-cont{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
     
+}
+.slide-hero-hotel{
+    max-width: 686px;
+    
+    
+}
+
+.text-hero-hotel{
+    position: absolute;
+    bottom:0;
+    left: 32px;
+    transform: (32%, 0);
 }
 }

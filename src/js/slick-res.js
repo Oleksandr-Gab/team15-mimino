@@ -9,7 +9,7 @@ $('.responsive').slick({
     centerPadding: '0',
     responsive: [
     {
-        breakpoint: 1200,
+        breakpoint: 1440,
         settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -18,7 +18,7 @@ $('.responsive').slick({
         }
     },
     {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -44,7 +44,7 @@ $('.responsive').slick({
     variableWidth: true,
     responsive: [
       {
-          breakpoint: 1600,
+          breakpoint: 1440,
           settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -53,7 +53,7 @@ $('.responsive').slick({
           }
       },
       {
-          breakpoint: 768,
+          breakpoint: 767,
           settings: {
           slidesToShow: 1,
           slidesToScroll: 1
