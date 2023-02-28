@@ -9,16 +9,16 @@ $('.responsive').slick({
     centerPadding: '0',
     responsive: [
     {
-        breakpoint: 1200,
+        breakpoint: 1440,
         settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         infinite: true,
         dots: true
         }
     },
     {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -33,4 +33,39 @@ $('.responsive').slick({
       }
       
     ]
+  });
+  
+  $('.hotel-hero-slider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: true,
+    responsive: [
+      {
+          breakpoint: 1440,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+          }
+      },
+      {
+          breakpoint: 767,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+          }
+      },
+      {
+          breakpoint: 375,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        
+      ]
   });
