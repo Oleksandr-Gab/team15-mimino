@@ -32,9 +32,6 @@
   font-style: italic;
 }
 @media screen and (min-width: 375px) {
-  p:last-child {
-    margin-bottom: 0;
-  }
   .welcome-description-first {
     width: 306px;
   }
@@ -48,21 +45,18 @@
     margin-top: 40px;
     padding-bottom: 80px;
   }
-  .description-flex {
+  .welcome-description-flex {
     display: flex;
     gap: 32px;
+    margin-bottom: 40px;
   }
   .welcome-description-first {
     width: 308px;
   }
   .welcome-description-second {
     width: 366px;
-    margin-bottom: 32px;
   }
 
-  p:last-child {
-    margin-bottom: 0;
-  }
   .welcome-title {
     width: 405px;
   }
@@ -91,9 +85,11 @@
   .welcome-description-first {
     margin-bottom: 24px;
   }
-  p:last-child {
+
+  .welcome-description-second {
     margin-bottom: 0;
   }
+
   .welcome-description-first,
   .welcome-description-second {
     width: 437px;

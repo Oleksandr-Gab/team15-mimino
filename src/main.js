@@ -1,2 +1,3 @@
 import './js/slick';
-import "./slick-res"
+import './js/slick-res';
+import './js/menu';
