@@ -1,0 +1,109 @@
+.about-cont{
+    margin-top: 60px;
+    width: 375;
+    background-color: #F6F6F6;
+
+}
+
+.pict-cont1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.about-text{
+
+}
+
+.pict-cont2{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+
+}
+.card1{
+margin-bottom: 20px;
+width: 335px;
+height: 422px;
+}
+
+.maria{
+position: absolute;
+width: 212px;
+height: 61px;
+transform: translate(-50%, -50%);
+}
+
+.card2{
+width: 282px;
+height: 153px;
+}
+
+.about-text-cont{
+    margin-top: 32px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    gap: 14px
+
+
+}
+.about-title{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color:  #484848;
+display: flex;
+justify-content: start;
+}
+
+.about-sub-text{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #121212;
+width: 335px;
+}
+
+.card3{
+width: 335px;
+height: 311px;
+
+}
+
+.alex{
+position: absolute;
+width: 212px;
+height: 61px;
+transform: translate(+25%, -50%);
+
+}
+.about-text-cont-2{
+margin-top: 54px;
+margin-bottom: 40px;
+display: flex;
+flex-direction: column;
+gap: 14px
+}
+
+.about-sub-text-1{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #121212;
+width: 263px;
+}
+
+.card4{
+width: 335px;
+height: 309px;
+}
