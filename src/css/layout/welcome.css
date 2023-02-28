@@ -1,5 +1,5 @@
 .main-welcome {
-  margin-top: 32px;
+  padding-top: 64px;
   padding-bottom: 64px;
 }
 
@@ -25,9 +25,12 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   margin-bottom: 32px;
-  width: 285px;
+  width: 265px;
 }
-
+.img-wlm{
+  width: 335px;
+  height: 432px;
+}
 .italic-font {
   font-style: italic;
 }
@@ -42,8 +45,12 @@
 
 @media screen and (min-width: 768px) {
   .main-welcome {
-    margin-top: 40px;
+    padding-top: 80px;
     padding-bottom: 80px;
+  }
+  .img-wlm{
+    width: 704px;
+    height: 599px;
   }
   .welcome-description-flex {
     display: flex;
@@ -64,7 +71,7 @@
 
 @media screen and (min-width: 1440px) {
   .main-welcome {
-    margin-top: 63px;
+    padding-top: 126px;
     padding-bottom: 100px;
   }
   .wrapper-text-welcome {
@@ -93,5 +100,9 @@
   .welcome-description-first,
   .welcome-description-second {
     width: 437px;
+  }
+  .img-wlm{
+    width:  672px;
+    height:  599px;
   }
 }
