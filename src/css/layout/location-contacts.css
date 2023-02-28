@@ -44,6 +44,11 @@
   letter-spacing: -0.02em;
 }
 
+.picture-map {
+  mix-blend-mode: luminosity;
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+
 @media (max-width: 767px) {
   .contacts-list {
     margin-top: 28px;
