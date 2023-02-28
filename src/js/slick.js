@@ -4,39 +4,13 @@ $('.single-item').slick({
 //   nextArrow: 'bnt-nextArrow',
 });
 
-$('.room-slider').slick({
-  dots: false,
-  prevArrow: ".arrow-prev",
-  nextArrow: ".arrow-next",
-  infininity: true,
-  centerPadding:"80px",
+
+$('.room-hero-slider').slick({
+  arrows:false,
+  infinite: true,
   slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: false,
   variableWidth: true,
-  
-  responsive:[
-    {
-      breakpoint: 375,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        centerPadding:"268px",
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 1440,
-      settings: {
-        centerPadding:"236px",
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    
-  ]
+  autoplay:true,
 });
