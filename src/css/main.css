@@ -28,3 +28,5 @@
 @import url('./pages/room/amenities.css');
 /* модалки */
 @import url('./modal/modal.css');
+/* меню */
+@import url('./components/mobil-menu.css');
