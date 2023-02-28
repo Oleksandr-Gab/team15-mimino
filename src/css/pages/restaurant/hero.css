@@ -1,0 +1,165 @@
+.restaurant-about {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-about {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-about_container {
+    width: 1440px;
+    display: flex;
+    gap: 181px;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.restaurant-about-options-container {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-about-options-container {
+    margin-bottom: 54px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-about-options-container {
+    width: 524px;
+    margin-top: 282px;
+  }
+}
+
+.restaurant-about-restaurant > h1 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #121212;
+
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-about-restaurant > h1 {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-about-restaurant > h1 {
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.restaurant-about_order-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.res-about-carousel-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 375px) {
+  .res-about-carousel-image {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .res-about-carousel-image {
+    width: 436px;
+    height: 5548px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .res-about-carousel-image {
+    width: 436px;
+    height: 580px;
+  }
+}
+
+.res-about-slick-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 375px) {
+  .res-about-slick-container {
+    width: 355px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .res-about-slick-container {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .res-about-slick-container {
+    width: 737px;
+  }
+}
+
+.restaurant_btn {
+  margin-bottom: 40px;
+}
+
+.restaurant_btn:last-child {
+  margin-left: 12px;
+}
+
+.res-about-carousel-image:not(:last-child) {
+  margin-right: 0;
+}
+
+.res-about_call-to-action {
+  width: 100%;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 375px) {
+  .res-about_call-to-action {
+    width: 338px;
+    margin-right: auto;
+  }
+}
+
+.res-about_call-to-action > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #121212;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .res-about_call-to-action > p {
+    position: absolute;
+    width: 353px;
+    bottom: 0;
+    left: 0;
+  }
+}
