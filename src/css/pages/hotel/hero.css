@@ -91,6 +91,6 @@ margin-bottom: 54px;
     position: absolute;
     bottom:0;
     left: 32px;
-    transform: (32%, 0);
+    transform: translate(0, 0);
 }
 }

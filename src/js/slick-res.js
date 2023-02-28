@@ -2,11 +2,11 @@ $('.responsive').slick({
     dots: true,
     infinite: true,
     arrows:false,
-    speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
     centerMode: false,
-    centerPadding: '0',
+    
+    
     responsive: [
     {
         breakpoint: 1440,
@@ -38,6 +38,7 @@ $('.responsive').slick({
   $('.hotel-hero-slider').slick({
     dots: true,
     infinite: true,
+    arrows:false,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: false,
