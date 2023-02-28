@@ -1,5 +1,5 @@
 .header {
-  background-color: #121212;
+  background-color: var(--brand-color);
   padding-top: 22px;
   padding-bottom: 22px;
   border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
@@ -7,7 +7,6 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .menu-open-btn {
   border: 0px;
@@ -48,6 +47,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
+    margin-left: auto;
   }
 
   .header-social-icon {
@@ -57,6 +57,7 @@
     width: 150px;
     font-size: 20px;
     line-height: 1.2;
+    margin-right: 0;
   }
   .header-logo-text {
     font-size: 8px;
@@ -64,6 +65,9 @@
   }
 }
 @media (min-width: 1440px) {
+  .header {
+    background-color: transparent;
+  }
   .header-nav-list {
     display: flex;
     flex-direction: row;
@@ -80,10 +84,15 @@
     text-transform: uppercase;
     color: var(--light-color);
   }
+  .header-logo-name {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .header-nav {
     display: flex;
     align-items: center;
+    margin-right: 370px;
   }
   .current {
     position: relative;
@@ -91,11 +100,11 @@
   .current::after {
     position: absolute;
     top: 20px;
-    left: 19px;
+    left: 45%;
     content: '';
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #f7f7f7;
+    background: var(--light-color);
   }
 }
