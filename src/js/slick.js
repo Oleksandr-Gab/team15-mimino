@@ -4,13 +4,12 @@ $('.single-item').slick({
   nextArrow: '.menu-slick-icons-nextArrow',
 });
 
-
 $('.room-hero-slider').slick({
-  arrows:false,
+  arrows: false,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: false,
   variableWidth: true,
-  autoplay:true,
+  autoplay: true,
 });
