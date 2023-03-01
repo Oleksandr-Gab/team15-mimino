@@ -29,7 +29,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <script type="module" crossorigin src="/team15-mimino/assets/menu-2cbb57b3.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/menu-e7b019cd.css">
+    <link rel="stylesheet" href="/team15-mimino/assets/menu-88875d14.css">
     <link rel="stylesheet" href="/team15-mimino/assets/room-ab9a9587.css">
   </head>
   <body>
@@ -145,7 +145,7 @@
     <div class="slider-tittle-button">
       <div class="title-button">
         <h1 class="hero-room-title"> Double </br> <span class="luxury">luxury</span> room</h1>
-        <button type="button" class=" btn room-hero-but">view prices</button>
+        <button type="button" data-modal-open class=" btn room-hero-but ">view prices</button>
       </div>
       <div>
         <div class="room-hero-slider">
@@ -442,7 +442,41 @@
       </div>
     </div>
   </div>
-    
+    <div class="backdrops " data-modal>
+    <div class="modal modal-price">
+        
+            <button class="modal-close-btn" data-modal-close>
+            <svg class="close-svg svg-position" widht="28" height="28">
+            <use href="/team15-mimino/assets/sprayt-a5cfcacf.svg#icon-close"></use>
+            </svg>
+            </button>
+            <h2 class="title-modal-pr">prices per room </h2>
+            <p class="text-modal-pr">double suite</p>
+        <form class="modal-price-form">
+            <div class="flex-form">
+              <div class="form-night">
+                <select class="modal-input nights" id="quickly" name="quickly">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option  value="3" >3</option>
+                  <option value="4">4</option>
+              </select>
+              <label for="quickly" class="label-prices">number of nights</label>
+              </div>
+             <div class="form-number">
+              <input type="number" class="modal-input nights" name="uah" min="1000" value="1000" id="uah" placeholder="">
+            <label for="uah" class="label-prices">uah</label>
+             </div>
+            </div>
+            <div class="btn-f-form">
+              <button class="btn btn-black btn-price" type="submit">
+                make a reservation
+              </button>
+            </div>
+        </div>
+        </form>
+          </div>
+  </div>
 
     <!-- Slick js -->
 
@@ -460,5 +494,7 @@
     ></script>
 
     
+    <!-- modal -->
+    <script src="./js/modal-price.js"></script>
   </body>
 </html>
