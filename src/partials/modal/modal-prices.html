@@ -1,35 +1,41 @@
-<div class="backdrops " data-modal>
-    <div class="modal modal-price">
-        
-            <button class="modal-close-btn" data-modal-close>
-            <svg class="close-svg svg-position" widht="28" height="28">
-            <use href="./img/sprayt.svg#icon-close"></use>
-            </svg>
-            </button>
-            <h2 class="title-modal-pr">prices per room </h2>
-            <p class="text-modal-pr">double suite</p>
-        <form class="modal-price-form">
-            <div class="flex-form">
-              <div class="form-night">
-                <select class="modal-input nights" id="quickly" name="quickly">
-                  <option value="1" selected>1</option>
-                  <option value="2">2</option>
-                  <option  value="3" >3</option>
-                  <option value="4">4</option>
-              </select>
-              <label for="quickly" class="label-prices">number of nights</label>
-              </div>
-             <div class="form-number">
-              <input type="number" class="modal-input nights" name="uah" min="1000" value="1000" id="uah" placeholder="">
-            <label for="uah" class="label-prices">uah</label>
-             </div>
-            </div>
-            <div class="btn-f-form">
-              <button class="btn btn-black btn-price" type="submit">
-                make a reservation
-              </button>
-            </div>
+<div class="backdrops is-hidden" data-modal-price>
+  <div class="modal modal-price">
+    <button class="modal-close-btn" data-modal-price-close>
+      <svg class="close-svg svg-position" widht="28" height="28">
+        <use href="./img/sprayt.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="title-modal-pr">prices per room</h2>
+    <p class="text-modal-pr">double suite</p>
+    <form class="modal-price-form">
+      <div class="flex-form">
+        <div class="form-night">
+          <select class="modal-input nights" id="quickly" name="quickly">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <label for="quickly" class="label-prices">number of nights</label>
         </div>
-        </form>
-          </div>
+        <div class="form-number">
+          <input
+            type="number"
+            class="modal-input nights"
+            name="uah"
+            min="1000"
+            value="1000"
+            id="uah"
+            placeholder=""
+          />
+          <label for="uah" class="label-prices">uah</label>
+        </div>
+      </div>
+      <div class="btn-f-form">
+        <button class="btn btn-black btn-price" type="submit">
+          make a reservation
+        </button>
+      </div>
+    </form>
   </div>
+</div>
