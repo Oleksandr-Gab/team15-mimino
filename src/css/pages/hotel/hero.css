@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .hotel-hero{
     padding-bottom: 32px;
 }
@@ -16,6 +17,14 @@ color: var(--brand-color);}
     display: flex;
     gap: 12px;
     margin-bottom: 40px;
+=======
+.title-hotel {
+  height: 5px;
+}
+.hotel-hero {
+  padding-top: 40px;
+  padding-bottom: 32px;
+>>>>>>> Stashed changes
 }
 
 .text-hero-hotel{
@@ -81,6 +90,7 @@ margin-bottom: 54px;
     
     
 }
+<<<<<<< Updated upstream
 .slide-hero-hotel{
     max-width: 686px;
     
@@ -94,3 +104,5 @@ margin-bottom: 54px;
     transform: translate(0, 0);
 }
 }
+=======
+>>>>>>> Stashed changes
