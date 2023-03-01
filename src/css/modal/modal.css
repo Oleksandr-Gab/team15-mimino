@@ -2,13 +2,18 @@
   margin: 0 auto;
   background-color: var(--brand-color);
 }
-
+.modal-table{
+width: 335px;
+height: 528px;
+}
 .modal-container {
   margin: 0 auto;
   max-width: 335px;
   padding: 24px;
   outline: 1px solid tomato;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-close-btn {
@@ -21,6 +26,9 @@
 }
 .close-svg {
   fill: var(--light-color);
+  width: 28px;
+  height: 28px;
+  top: 0;
 }
 .modal-name {
   color: var(--light-color);
@@ -37,5 +45,12 @@
   text-transform: uppercase;
   color: var(--light-color);
 }
-
-
+.input-cont{
+display: flex;
+  align-items: center;
+  position: relative;
+}
+.modal-select{
+display: flex;
+width: 100%;
+}
