@@ -52,6 +52,7 @@
 
   .header-social-icon {
     stroke: var(--light-color);
+    fill: transparent;
   }
   .header-logo-name {
     width: 150px;
