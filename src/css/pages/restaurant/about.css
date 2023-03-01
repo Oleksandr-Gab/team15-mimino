@@ -1,6 +1,8 @@
 .restaurant-hero {
+  
   padding-top: 32px;
   padding-bottom: 64px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -18,6 +20,8 @@
 }
 
 .restaurant-hero_picture-container {
+
+ 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,6 +40,7 @@
 @media screen and (min-width: 1440px) {
   .restaurant-hero_picture-container {
     flex-direction: row;
+    
   }
 }
 
@@ -64,7 +69,6 @@
     width: 284px;
     display: flex;
     flex-direction: column;
-
     row-gap: 16px;
     padding-top: 0;
   }
@@ -72,6 +76,7 @@
 
 @media screen and (min-width: 1440px) {
   .restaurant-hero_picture-small {
+   
     width: 833px;
     height: 389px;
     flex-direction: row;
@@ -105,10 +110,9 @@
 
 @media screen and (min-width: 1440px) {
   .restaurant-hero_description {
-    position: absolute;
-    bottom: 0;
-    right: 32px;
-
+position: absolute;
+top: 80%;
+    margin-left: 546px;
     width: 819px;
     display: flex;
     justify-content: unset;
