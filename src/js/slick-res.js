@@ -35,20 +35,20 @@ $('.responsive').slick({
 });
 
 $('.hotel-hero-slider').slick({
-  dots: true,
+  arrows: false,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: false,
   variableWidth: true,
-  responsive: [
+    responsive: [
     {
       breakpoint: 1440,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: true
       },
     },
     {
@@ -56,6 +56,8 @@ $('.hotel-hero-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: true,
+        dots: true
       },
     },
     {
