@@ -25,7 +25,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <script type="module" crossorigin src="/team15-mimino/assets/modal-price-0d55f041.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-9c1695f6.css">
+    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-f812a9f6.css">
     <link rel="stylesheet" href="/team15-mimino/assets/hotel-644dc04a.css">
   </head>
   <body>
@@ -768,48 +768,66 @@
             <div class="window-block">
           <laber class="modal-text" for="name">Your name</laber>
           <input class="modal-input bgr-room" type="name" name="name" id="name" placeholder=" " />
-          <label class="text-comment">Who should book a table for? </label>
+          <label class="text-comment" id="name">Who should book a table for? </label>
         </div>
         <div class="window-block">
-          <laber class="modal-text">+ 38 ()</laber>
-          <input class="modal-input bgr-room" 
+          <laber class="modal-text" for="tel">+ 38 () </laber>
+          <input class="modal-input bgr-room" id="tel"
           type="tel" 
           placeholder=" " 
           pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
           title = "+38(096)111 11 11      
           Phone number must be at least 8 digits, not contain letters or other symbols" />
-          <label class="text-comment">Phone number</label>
-        </div>
+          <label class="text-comment" id="tel">Phone number</label>
+        </div>      
         
-        
-        <div class="window-block">
-          <laber for="people bgr-room" class="modal-text">Today</laber>
-          <select class="" name="people" id="people">
+        <div class="window-block-svg">
+          <laber for="people bgr-room" class="modal-text">Today
+            <span>
+              <svg class="icon-modal-room" width="20" height="20">
+              <use href="../../img/sprayt.svg#icon-chevron"></use>
+            </svg>
+            </span>
+          </laber>
+          <select class="bgr-room" name="people" id="people">
             <option value="0">Today</option>
             <option value="+1">Tomorrow</option>
             <option value="-1">Yesterday</option>
             <option value="+7">Next week</option>
             <option value="-7">Last week</option>
           </select>
-            <input class="modal-input bgr-room " type="text" placeholder=" " />
+            <!-- <input class="modal-input bgr-room " type="text" placeholder=" " /> -->
             <label class="text-comment">Check-in date</label>
         </div>
-        <div class="window-block">
-            <laber class="modal-text">25/04/2023</laber>
-            <input class="modal-input bgr-room" type="date" placeholder=" " />
+        <div class="window-block-svg">
+            <laber class="modal-text bgr-room">25/04/2023
+              <span>
+                <svg class="icon-modal-room" width="20" height="20">
+                <use href="../../img/sprayt.svg#icon-chevron"></use>
+              </svg>
+              </span>
+            </laber>
+            <input class="modal-input bgr-room-date" type="date" placeholder=" " />
             <label class="text-comment">Check-in date</label>
           </div>
         
-          <div class="window-block">
-            <laber class="modal-text">Double suite</laber>
-            <select class="" name="people" id="people">
+          <div class="window-block-svg">
+            <laber class="modal-text" type="text">Double suite
+              <span>
+              <svg class="icon-modal-room" width="20" height="20">
+              <use href="../../img/sprayt.svg#icon-chevron"></use>
+             </svg>
+            </span>
+          </laber>
+            <select class="suite-type bgr-room" name="people" id="people">
               <option value="0">Double suite</option>
               <option value="1">Single suite</option>
               <option value="2">Double economy room</option>
               <option value="3">Single economy room</option>
               
             </select>
-            <input class="modal-input bgr-room" type="text" placeholder=" " />
+            
+            <!-- <input class="modal-input bgr-room" type="text" placeholder=" " /> -->
             <label class="text-comment">Number category</label>
           </div>
         </div> 
