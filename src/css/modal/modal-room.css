@@ -8,7 +8,7 @@
     border-bottom-color: rgba(247, 247, 247, 0.2);
 }
 .bgr-room:hover,.bgr-room:focus,
- .bgr-room:visited  {
+ .bgr-room:visited, .bgr-room:active  {
     background-color:#ffffff;
 }
 .text-comment{
@@ -26,8 +26,36 @@
 .tittle-modal-room{
     margin-bottom: 40px;
 }
-[placeholder]{
-    color: blue;
+
+.modal-input:not(:placeholder-shown){
+    background-color:#ffffff;
 }
-
-
+.modal-block{
+    display: flex;
+}
+.svg-position{
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+}
+.container-abs{
+    position: relative;
+}
+@media screen and (min-width: 375px) {
+    .modal-container {
+      width: 375px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .modal-container {
+      width: 628px;
+     
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .modal-container {
+      width: 628px;
+    }
+  }
+  

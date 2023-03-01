@@ -1,8 +1,8 @@
 <div class="backdrop ">
     <div class="modal">
-      <div class="modal-container">
+      <div class="modal-container container-abs">
         <button class="modal-close-btn">
-          <svg class="close-svg" widht="28" height="28">
+          <svg class="close-svg svg-position" widht="28" height="28">
             <use href="./img/sprayt.svg#icon-close"></use>
           </svg>
         </button>
@@ -10,12 +10,12 @@
         <form class="modal-form">
             <div class="window-block">
           <laber class="modal-text" for="name">Your name</laber>
-          <input class="modal-input bgr-room" type="name" name="name" id="name" />
+          <input class="modal-input bgr-room" type="name" name="name" id="name" placeholder=" " />
           <label class="text-comment">Who should book a table for? </label>
         </div>
         <div class="window-block">
           <laber class="modal-text">+ 38 ()</laber>
-          <input class="modal-input bgr-room" type="tel"placeholder="+38 ()" />
+          <input class="modal-input bgr-room" type="tel" placeholder=" " pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" />
           <label class="text-comment">Phone number</label>
         </div>
         <div class="window-block">
@@ -27,16 +27,22 @@
             <option value="+7">Next week</option>
             <option value="-7">Last week</option>
           </select>
-            <input class="modal-input bgr-room " type="text" />
+            <input class="modal-input bgr-room " type="text" placeholder=" " />
             <label class="text-comment">Check-in date</label>
         </div>
         <div class="window-block">
             <laber class="modal-text">25/04/2023</laber>
-            <input class="modal-input bgr-room" type="date" />
+            <input class="modal-input bgr-room" type="date" placeholder=" " />
             <label class="text-comment">Check-in date</label>
           </div>
-  
-          <button class="btn btn-black modal-btn" type="submit">
+
+          <div class="window-block">
+            <laber class="modal-text">Double suite</laber>
+            <input class="modal-input bgr-room" type="text" placeholder=" " />
+            <label class="text-comment">Number category</label>
+          </div>
+
+          <button class="btn btn-black modal-btn modal-block" type="submit">
             SMAKE A RESERVATION
           </button>
         </form>
