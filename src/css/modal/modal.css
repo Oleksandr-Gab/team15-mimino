@@ -28,7 +28,7 @@
 
 .modal-input {
   width: 100%;
-}
+  }
 .modal-text {
   font-weight: 500;
   font-size: 14px;
@@ -37,3 +37,5 @@
   text-transform: uppercase;
   color: var(--light-color);
 }
+
+
