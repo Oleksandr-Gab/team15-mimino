@@ -152,7 +152,7 @@
     
     .title-hotel-room {
         margin-bottom: 0;
-        margin-right: 606px;
+        margin-right: 0;
     }
 
     .about-hotel-room {
@@ -171,6 +171,7 @@
     }
 
     .hotel-luxury-container {
+          width: 100%;
         padding-bottom: 100px;
         
     }
@@ -187,6 +188,7 @@
     .hotel-luxury-btn-desktop {
         display: flex;
         margin-bottom: 40px;
+      justify-content: space-between;
     }
 
     .room-img-one {
