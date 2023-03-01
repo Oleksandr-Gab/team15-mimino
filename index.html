@@ -26,7 +26,7 @@
     />
     
     <script type="module" crossorigin src="/team15-mimino/assets/modal-price-70fbb9a3.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-c36bf541.css">
+    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-ad197c98.css">
   </head>
   <body>
     <header class="header">
@@ -704,7 +704,7 @@
 </footer>
 
 
-    <div class="backdrop is-hidden" data-modal-table>
+    <div class="backdrop " data-modal-table>
   <div class="modal">
     <div class="modal-cont">
     
@@ -767,13 +767,8 @@
           <div class="modal-list">
         <label class="modal-lable"></label>
         <div class="input-wrap">
-          <input 
-          type="date" 
-          name="date" 
-          placeholder="Today" 
-          class="modal-input"
-          value=" "
-          >
+          <input type="date" value="" class="input-txt" id="date" aria-required="true" aria-invalid="false"
+            placeholder="TODAY" onchange="this.className=(this.value!=''?'has-value':'')">
           </div>
           <p class="folse-plhpld">What date to book?</p>
         </div>
