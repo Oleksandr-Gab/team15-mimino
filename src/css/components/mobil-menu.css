@@ -13,6 +13,7 @@
   padding-bottom: 22px;
   border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
   margin-bottom: 150px;
+  align-items: center;
 }
 
 .mobil-menu-close-btn {
@@ -22,23 +23,26 @@
 .menu-close-svg {
 }
 
-.header-logo-name {
-  width: 150px;
-  font-size: 20px;
-  line-height: 1.2;
-  margin-right: 0;
+.mobil-header-logo-name {
+  width: 120px;
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
-.header-logo-text {
-  font-size: 8px;
-  line-height: 1.25;
+.mobil-header-logo-text {
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
 }
 
-.menu-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; */
-}
 .mobil-nav {
   display: flex;
   justify-content: center;
@@ -71,4 +75,37 @@
 .mobi-header-social-icon {
   stroke: var(--light-color);
   fill: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .mobil-header-logo-name {
+    width: 150px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mobil-header-logo-text {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  .mobi-header-nav-link {
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .mobi-header-nav-item {
+    margin-bottom: 40px;
+  }
+
+  .mobi-header-social-list {
+    position: static;
+  }
+  .mobil-menu-header {
+    justify-content: space-between;
+  }
+  .mobi-header-social-list {
+    gap: 14px;
+  }
 }

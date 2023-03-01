@@ -1,0 +1,116 @@
+.hotel-four {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background-color: #f7f7f7;
+}
+.fs-list-mob {
+  margin-bottom: 32px;
+}
+.fs-room2 {
+  margin-right: 19px;
+}
+.fs-room2-room3 {
+  margin-top: 20px;
+  display: flex;
+}
+.fs-title {
+  font-weight: 700;
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 1, 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+.fs-desc {
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+.fs-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 28px;
+}
+.fs-btn-1 {
+  margin-right: 14px;
+}
+@media screen and (max-width: 768px) {
+  .fs-list-tab {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .fs-list-desc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hotel-four {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .fs-title {
+    font-size: 40px;
+  }
+  .fs-div-desc {
+    width: 475px;
+    margin-bottom: 40px;
+  }
+  .fs-desc {
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .fs-buttons {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+  .fs-list-mob {
+    display: none;
+  }
+  .fs-list-tab {
+    display: flex;
+    margin-bottom: 32px;
+  }
+  .fs-tab-room1 {
+    width: 223px;
+    height: 261px;
+  }
+  .fs-room1-room2 {
+    margin-right: 32px;
+  }
+  .fs-tab-room1 {
+    margin-bottom: 32px;
+    margin-right: 0px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hotel-four {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .fs-list-tab {
+    display: none;
+  }
+  .title-desc-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fs-title {
+    margin-bottom: 40px;
+  }
+  .fs-list-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .fs-desc-room:not(:last-child) {
+    margin-right: 32px;
+  }
+}
