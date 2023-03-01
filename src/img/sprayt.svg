@@ -32,6 +32,9 @@
 <symbol id="icon-humburger" viewBox="0 0 47 32">
 <path d="M-0.221 2.077c0-1.205 0.977-2.182 2.182-2.182v0h42.964c1.205 0 2.182 0.977 2.182 2.182s-0.977 2.182-2.182 2.182v0h-42.964c-1.205 0-2.182-0.977-2.182-2.182v0zM-0.221 15.615c0-1.205 0.977-2.182 2.182-2.182v0h42.964c1.205 0 2.182 0.977 2.182 2.182s-0.977 2.182-2.182 2.182v0h-42.964c-1.205 0-2.182-0.977-2.182-2.182v0zM-0.221 29.153c0-1.205 0.977-2.182 2.182-2.182v0h42.964c1.205 0 2.182 0.977 2.182 2.182s-0.977 2.182-2.182 2.182v0h-42.964c-1.205 0-2.182-0.977-2.182-2.182v0z"></path>
 </symbol>
+<symbol id="icon-Arrow-down" viewBox="0 0 32 32">
+<path fill="none" stroke="#f7f7f7" style="stroke: var(--color1, #f7f7f7)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.88" d="M8 12l8 8 8-8"></path>
+</symbol>
 <symbol id="icon-humburger-mimino" viewBox="0 0 48 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3 16h42M3 2h42M3 30h28"></path>
 </symbol>
