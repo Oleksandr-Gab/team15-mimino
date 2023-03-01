@@ -1,108 +1,89 @@
-<<<<<<< Updated upstream
-.hotel-hero{
-    padding-bottom: 32px;
-}
-
-.title-hotel{
-margin-top: 40px;
-margin-bottom: 24px;
-font-weight: 400;
-font-size: 40px;
-line-height: 1;
-letter-spacing: -0.02em;
-text-transform: uppercase;
-color: var(--brand-color);}
-
-.btn-hotel-hero{
-    display: flex;
-    gap: 12px;
-    margin-bottom: 40px;
-=======
-.title-hotel {
-  height: 5px;
-}
 .hotel-hero {
-  padding-top: 40px;
   padding-bottom: 32px;
->>>>>>> Stashed changes
+}
+.title-hotel {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--brand-color);
 }
 
-.text-hero-hotel{
-font-weight: 400;
-font-size: 14px;
-line-height: calc(18 / 14);
-letter-spacing: 0.05em;
-text-transform: uppercase;
-color: var(--brand-color);
+.btn-hotel-hero {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
 }
+
+.text-hero-hotel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+
 .content-hero-hotel:not(:last-child) {
-margin-right: 20px;
-
-  }
+  margin-right: 20px;
+}
 @media screen and (min-width: 375px) {
 }
 
-@media screen and (min-width: 768px){
-    .hotel-hero{
-        padding-bottom: 60px;
-    }
-.title-hotel{
-margin-bottom: 32px;
-font-size: 80px;
-line-height: 1;
-}
-.btn-hotel-hero{
-gap: 14px;
-margin-bottom: 54px;
-    }
-.text-hero-hotel{
+@media screen and (min-width: 768px) {
+  .hotel-hero {
+    padding-bottom: 60px;
+  }
+
+  .title-hotel {
+    margin-bottom: 32px;
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  .btn-hotel-hero {
+    gap: 14px;
+    margin-bottom: 54px;
+  }
+  .text-hero-hotel {
     max-width: 338px;
+  }
 }
-}
 
-
-
-
-
-@media screen and (min-width: 1440px){
-    .hotel-hero{
-        padding-bottom: 91px;
-    }
-.title-hotel{
-margin-top: 0;
-font-size: 90px;
-line-height: 1;
-}
-.btn-hotel-hero{
-gap: 14px;
-margin-bottom: 54px;
-    }
-.text-hero-hotel{
+@media screen and (min-width: 1440px) {
+  .hotel-hero {
+    padding-bottom: 91px;
+  }
+  .title-hotel {
+    margin-top: 0;
+    font-size: 90px;
+    line-height: 1;
+  }
+  .btn-hotel-hero {
+    gap: 14px;
+    margin-bottom: 54px;
+  }
+  .text-hero-hotel {
     width: 338px;
-    
-}
-.hotel-hero-cont{
+  }
+  .hotel-hero-cont {
     margin-top: 30px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
-}
-<<<<<<< Updated upstream
-.slide-hero-hotel{
+  }
+  .slide-hero-hotel {
     max-width: 686px;
-    
-    
-}
+  }
 
-.text-hero-hotel{
+  .text-hero-hotel {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 32px;
     transform: translate(0, 0);
+  }
 }
-}
-=======
->>>>>>> Stashed changes
