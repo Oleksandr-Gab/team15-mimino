@@ -36,9 +36,41 @@ margin-top: 24px;
     width: 100%;
 }
 
+<<<<<<< Updated upstream
 .content-rest:not(:last-child){
     margin-right: 20px;
+=======
+.btn-rest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+>>>>>>> Stashed changes
 }
+.slide{
+  position: relative;
+}
+.arrows{
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top:100%;
+  right: 83.5%;
+  transform: translate(15%, -83.5%);
+  
+}
+
+.arrowsy{
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+.qw{
+  fill: var(--brand-color);
+}
+
 
 .btn {
     color: var(--brand-color);
@@ -58,6 +90,16 @@ margin-top: 24px;
     .container{
     width: 355px;}
 
+<<<<<<< Updated upstream
+=======
+  .btn-rest {
+    gap: 14px;
+  }
+  .arrows{
+    top:100%;
+    right: 90%;
+    transform: translate(0%, -83.5%);
+>>>>>>> Stashed changes
 }
 
 
@@ -114,6 +156,7 @@ margin-right: 32px;
     .title-res{
     font-size: 68px;
     margin-right: 32px;
+<<<<<<< Updated upstream
     }
     .text-rest{
         margin: 0;
@@ -133,3 +176,29 @@ margin-right: 32px;
     }
     }
     
+=======
+  }
+  .text-rest {
+    margin: 0;
+  }
+
+  .btn {
+    padding: 8px 24px;
+  }
+
+  .btn-rest {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    transform: translate(0, 0);
+    gap: 24px;
+    margin-top: 0;
+  }
+  .arrows{
+    top:100%;
+    right: 49%;
+    transform: translate(0, 0);
+}
+}
+}
+>>>>>>> Stashed changes
