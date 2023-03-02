@@ -85,8 +85,9 @@
   }
 
   .triple-img-two-tab {
+    display: block;
     width: 223px;
-    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .title-triple-room {
