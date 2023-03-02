@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
       /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
 
-      modalElem.classList.add('is-hidden');
-      overlay.classList.add('is-hidden');
+      modalElem.classList.remove('is-hidden');
+      overlay.classList.remove('is-hidden');
     }); // end click
   }); // end foreach
 
