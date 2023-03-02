@@ -1,8 +1,12 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-table-rest-open]'),
-    closeModalBtn: document.querySelector('[data-modal-table-rest-close]'),
-    modal: document.querySelector('[data-modal-rest-table]'),
+    openModalBtn: document.querySelector(
+      '[data-modal-page-hotel-price-lux-open]'
+    ),
+    closeModalBtn: document.querySelector(
+      '[data-modal-page-hotel-price-lux-close]'
+    ),
+    modal: document.querySelector('[data-modal-page-hotel-lux-price]'),
     body: document.querySelector('body'),
   };
 
@@ -14,3 +18,4 @@
     refs.body.classList.toggle('no-scroll');
   }
 })();
+
