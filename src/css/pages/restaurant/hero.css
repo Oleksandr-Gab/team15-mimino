@@ -1,11 +1,12 @@
 .restaurant-about {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 1440px) {
   .restaurant-about {
     padding-top: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -33,7 +34,7 @@
 @media screen and (min-width: 1440px) {
   .restaurant-about-options-container {
     width: 524px;
-    margin-top: 282px;
+    margin-top: 204px;
   }
 }
 
@@ -98,8 +99,6 @@
   }
 }
 
-.res_slick-container {
-}
 
 .res-about-slick-container {
   width: 100%;
@@ -156,7 +155,7 @@
   text-transform: uppercase;
   color: #121212;
   margin: 0;
-  padding-bottom: 20px;
+  
 }
 
 @media screen and (min-width: 1440px) {
