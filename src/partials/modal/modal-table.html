@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal-table>
+<div class="backdrop is-hiden" data-modal-table>
   <div class="modal">
     <div class="modal-cont">
     
@@ -61,13 +61,8 @@
           <div class="modal-list">
         <label class="modal-lable"></label>
         <div class="input-wrap">
-          <input 
-          type="date" 
-          name="date" 
-          placeholder="Today" 
-          class="modal-input"
-          value=" "
-          >
+          <input type="date" value="" class="input-txt" id="date" aria-required="true" aria-invalid="false"
+            placeholder="TODAY" onchange="this.className=(this.value!=''?'has-value':'')">
           </div>
           <p class="folse-plhpld">What date to book?</p>
         </div>
