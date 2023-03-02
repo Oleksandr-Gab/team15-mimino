@@ -278,5 +278,6 @@ Desktop */
     width: 300px;
     height: 120px;
     transform: translate(-50%, +140%);
+    z-index: 1;
   }
 }
