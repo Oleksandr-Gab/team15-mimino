@@ -1,16 +1,15 @@
 .modal {
   margin: 0 auto;
   background-color: var(--brand-color);
+  z-index: 2;
 }
 .modal-table {
   width: 335px;
-  height: 528px;
 }
 .modal-container {
   margin: 0 auto;
   max-width: 335px;
   padding: 24px;
-  outline: 1px solid tomato;
   position: relative;
   display: flex;
   flex-direction: column;
