@@ -125,7 +125,7 @@
 
     .hotel-luxury-btn {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: 14px;
     }
 
