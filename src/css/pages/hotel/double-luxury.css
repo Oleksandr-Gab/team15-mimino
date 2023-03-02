@@ -84,6 +84,7 @@
     }
     
     .room-img-two-tab {
+        display: block;
         margin-bottom: 32px;
         margin-right: 0;
         margin-left: auto;
