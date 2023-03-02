@@ -34,6 +34,7 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 28px;
+  gap: 14px;
 }
 .fs-btn-1 {
   margin-right: 14px;

@@ -23,6 +23,7 @@ height: 528px;
   position: absolute;
   top: 0;
   right: 0;
+  border: none;
 }
 .close-svg {
   fill: var(--light-color);
