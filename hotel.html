@@ -24,8 +24,8 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/team15-mimino/assets/modal-price-70fbb9a3.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-ad197c98.css">
+    <script type="module" crossorigin src="/team15-mimino/assets/modal-room-dbea8fb6.js"></script>
+    <link rel="stylesheet" href="/team15-mimino/assets/modal-room-ad197c98.css">
     <link rel="stylesheet" href="/team15-mimino/assets/hotel-644dc04a.css">
   </head>
   <body>
@@ -141,7 +141,9 @@
     <div class="hero-hotel-tit">
       <h2 class="title-hotel">hotel</h2>
       <div class="btn-hotel-hero">
-        <button class="btn">book a room</button>
+        <button class="btn js-open-modal" type="button" data-modal="room">
+          book a room
+        </button>
         <button type="button" class="fs-btn-2 btn" data-modal-price-open>
           View Prices
         </button>
@@ -226,12 +228,11 @@
         </div>
       </div>
     </div>
-    
-      <p class="text-hero-hotel">
+
+    <p class="text-hero-hotel">
       Whether you're in the mood for a hearty breakfast, a light lunch, or a
       romantic dinner, our menu has something for everyone.
     </p>
-  </div>
   </div>
 </section>
 
@@ -757,10 +758,10 @@
 </footer>
 
 
-    <div class="backdrop is-hidden" backdrop-mod>
+    <div class="backdrop is-hidden js-overlay-modal" data-modal="room">
   <div class="modal">
     <div class="modal-container container-abs">
-      <button class="modal-close-btn btn-frame js-room-close">
+      <button class="modal-close-btn btn-frame js-modal-close">
         <svg class="close-svg svg-position" widht="28" height="28">
           <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
         </svg>
@@ -907,7 +908,7 @@
 
 
     
-
+    <!-- Slick -->
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -920,5 +921,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/slick-res.js"></script>
+    <script src="./js/modals.js"></script>
   </body>
 </html>

@@ -28,8 +28,8 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/team15-mimino/assets/modal-price-70fbb9a3.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-ad197c98.css">
+    <script type="module" crossorigin src="/team15-mimino/assets/modal-room-dbea8fb6.js"></script>
+    <link rel="stylesheet" href="/team15-mimino/assets/modal-room-ad197c98.css">
     <link rel="stylesheet" href="/team15-mimino/assets/room-ab9a9587.css">
   </head>
   <body>
@@ -314,7 +314,13 @@
           />
         </picture>
         <div class="amenities-btn">
-          <button type="button" class="btn btn-black">Book a room</button>
+          <button
+            class="btn btn-black js-open-modal"
+            type="button"
+            data-modal="room"
+          >
+            Book a room
+          </button>
         </div>
       </div>
     </div>
@@ -373,10 +379,10 @@
 </footer>
 
 
-    <div class="backdrop is-hidden" backdrop-mod>
+    <div class="backdrop is-hidden js-overlay-modal" data-modal="room">
   <div class="modal">
     <div class="modal-container container-abs">
-      <button class="modal-close-btn btn-frame js-room-close">
+      <button class="modal-close-btn btn-frame js-modal-close">
         <svg class="close-svg svg-position" widht="28" height="28">
           <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
         </svg>
@@ -524,6 +530,8 @@
 
     <!-- Slick js -->
 
+    
+    <!-- Slick -->
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -536,8 +544,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
-    
-    <!-- modal -->
+    <script src="./js/slick.js"></script>
+    <script src="./js/slick-res.js"></script>
+    <script src="./js/modals.js"></script>
   </body>
 </html>
