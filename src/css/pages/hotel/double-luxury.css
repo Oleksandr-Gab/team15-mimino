@@ -59,6 +59,9 @@
     justify-content: center;
 }
 
+.room-img-three {
+    max-width: 157px;
+}
 
 @media screen and (min-width: 375px) {
     
@@ -171,7 +174,7 @@
     }
 
     .hotel-luxury-container {
-          width: 100%;
+        width: 100%;
         padding-bottom: 100px;
         
     }
@@ -188,7 +191,7 @@
     .hotel-luxury-btn-desktop {
         display: flex;
         margin-bottom: 40px;
-      justify-content: space-between;
+        justify-content: space-between;
     }
 
     .room-img-one {
@@ -200,6 +203,7 @@
     }
     
     .room-img-three {
+        min-width: 386px;
         order: 1;
     }
 }
