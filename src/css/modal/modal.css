@@ -2,9 +2,9 @@
   margin: 0 auto;
   background-color: var(--brand-color);
 }
-.modal-table{
-width: 335px;
-height: 528px;
+.modal-table {
+  width: 335px;
+  height: 528px;
 }
 .modal-container {
   margin: 0 auto;
@@ -37,7 +37,7 @@ height: 528px;
 
 .modal-input {
   width: 100%;
-  }
+}
 .modal-text {
   font-weight: 500;
   font-size: 14px;
@@ -46,12 +46,12 @@ height: 528px;
   text-transform: uppercase;
   color: var(--light-color);
 }
-.input-cont{
-display: flex;
+.input-cont {
+  display: flex;
   align-items: center;
   position: relative;
 }
-.modal-select{
-display: flex;
-width: 100%;
+.modal-select {
+  display: flex;
+  width: 100%;
 }
