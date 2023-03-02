@@ -24,8 +24,9 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/team15-mimino/assets/modal-room-48b7fc38.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-room-3f21da13.css">
+    <script type="module" crossorigin src="/team15-mimino/assets/restaurant-b18e4f99.js"></script>
+    <link rel="modulepreload" crossorigin href="/team15-mimino/assets/modal-price-page-hotel-hero-035f4c94.js">
+    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-page-hotel-hero-3f21da13.css">
     <link rel="stylesheet" href="/team15-mimino/assets/restaurant-c27e544f.css">
   </head>
 
@@ -145,7 +146,7 @@
         <h1>Restaurant</h1>
       </div>     
        <div class="restaurant-about_order-buttons">
-          <button type="button" class="btn">book a table</button>
+          <button type="button" class="btn" data-modal-table-page-rest-open>book a table</button>
           <a href="#menu-kichen" class="btn">view the menu</a>
         </div>
       </div>
@@ -588,7 +589,7 @@
       </div>
     </div>
     <div class="menu-btn">
-      <button type="button" class="btn btn-black" data-modal-table-open>book a table</button>
+      <button type="button" class="btn btn-black" data-modal-table-page-rest-menu-open>book a table</button>
     </div>
   </div>
 </section>
@@ -797,15 +798,22 @@
       </svg>
     </div>
     <div class="menu-btn">
-      <button type="button" class="btn btn-black" data-modal-table-open>book a table</button>
+      <button type="button" class="btn btn-black" data-modal-table-page-rest-menu-slick-open>book a table</button>
     </div>
   </div>
 </section>
 
-      <div class="backdrop is-hidden" data-modal-table>
+      <div class="backdrop is-hidden" data-modal-hero-table
+ data-modal-rest-table 
+ data-modal-page-rest-table 
+ data-modal-page-rest-menu-table
+ data-modal-page-rest-menu-slick-table
+ >
   <div class="modal">
     <div class="modal-cont">
-      <button type="button" data-modal-table-close class="modal-close">
+      <button type="button" data-modal-table-hero-close
+      data-modal-table-page-rest-close
+      class="modal-close">
         <a href="#" class="modal-close-cross">
           <svg class="modal-icon-cross" width="28" height="28">
             <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
@@ -933,10 +941,17 @@
 </footer>
 
 
-    <div class="backdrop is-hidden" data-modal-table>
+    <div class="backdrop is-hidden" data-modal-hero-table
+ data-modal-rest-table 
+ data-modal-page-rest-table 
+ data-modal-page-rest-menu-table
+ data-modal-page-rest-menu-slick-table
+ >
   <div class="modal">
     <div class="modal-cont">
-      <button type="button" data-modal-table-close class="modal-close">
+      <button type="button" data-modal-table-hero-close
+      data-modal-table-page-rest-close
+      class="modal-close">
         <a href="#" class="modal-close-cross">
           <svg class="modal-icon-cross" width="28" height="28">
             <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
@@ -1016,6 +1031,10 @@
     <!-- Slick js -->
 
     
+    
+    
+    
+
     <!-- Slick -->
     <script
       type="text/javascript"

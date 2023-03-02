@@ -28,8 +28,10 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/team15-mimino/assets/modal-room-48b7fc38.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-room-3f21da13.css">
+    <script type="module" crossorigin src="/team15-mimino/assets/room-d25a6c27.js"></script>
+    <link rel="modulepreload" crossorigin href="/team15-mimino/assets/modal-price-page-hotel-hero-035f4c94.js">
+    <link rel="modulepreload" crossorigin href="/team15-mimino/assets/modal-room-hot-9b1b466c.js">
+    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-page-hotel-hero-3f21da13.css">
     <link rel="stylesheet" href="/team15-mimino/assets/room-ab9a9587.css">
   </head>
   <body>
@@ -145,7 +147,8 @@
     <div class="slider-tittle-button">
       <div class="title-button">
         <h1 class="hero-room-title"> Double </br> <span class="luxury">luxury</span> room</h1>
-        <button type="button" data-modal-open class=" btn room-hero-but ">view prices</button>
+        <button type="button" data-modal-page-room-open
+        class=" btn room-hero-but ">view prices</button>
       </div>
       <div>
         <div class="room-hero-slider">
@@ -315,9 +318,9 @@
         </picture>
         <div class="amenities-btn">
           <button
-            class="btn btn-black js-open-modal"
+            class="btn btn-black"
             type="button"
-            data-modal="room"
+            data-modal-room-am-open
           >
             Book a room
           </button>
@@ -379,10 +382,21 @@
 </footer>
 
 
-    <div class="backdrop overlay js-overlay-modal">
+    <div class="backdrop is-hidden"
+data-modal-room
+data-modal-hot-room
+data-modal-page-hot-room
+data-modal-page-page-room-room
+data-modal-am-room
+>
   <div class="modal" data-modal="room">
     <div class="modal-container container-abs">
-      <button class="modal-close-btn btn-frame js-modal-close">
+      <button class="modal-close-btn btn-frame "
+      data-modal-room-close
+      data-modal-room-page-hot-close
+      data-modal-room-page-room-close
+      data-modal-room-am-close
+      >
         <svg class="close-svg svg-position" widht="28" height="28">
           <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
         </svg>
@@ -485,9 +499,16 @@
   </div>
 </div>
 
-    <div class="backdrops is-hidden" data-modal-price>
+    <div class="backdrops is-hidden" data-modal-page-hotel-hero-price
+data-modal-page-hotel-lux-price
+data-modal-page-hotel-tri-price
+data-modal-page-hotel-four-price
+data-modal-page-room
+>
   <div class="modal modal-price">
-    <button class="modal-close-btn" data-modal-price-close>
+    <button class="modal-close-btn" data-modal-page-hotel-price-hero-close
+    data-modal-page-room-close
+    >
       <svg class="close-svg svg-position" widht="28" height="28">
         <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
       </svg>
@@ -528,8 +549,15 @@
 </div>
 
 
+    
+    
+    
+
+
+    
     <!-- Slick js -->
 
+    
     
     <!-- Slick -->
     <script
