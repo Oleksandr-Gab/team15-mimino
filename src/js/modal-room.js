@@ -50,9 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
-
-      modalElem.classList.remove('is-hidden');
-      overlay.classList.remove('is-hidden');
+      modalElem.classList.add('active');
+      overlay.classList.add('active');
     }); // end click
   }); // end foreach
 
@@ -60,7 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', function (e) {
       var parentModal = this.closest('.modal');
 
-      overlay.classList.add('is-hidden');
+      parentModal.classList.remove('active');
+      overlay.classList.remove('active');
     });
   }); // end foreach
 
@@ -70,15 +70,15 @@ document.addEventListener('DOMContentLoaded', function () {
       var key = e.keyCode;
 
       if (key == 27) {
-        document.querySelector('.modal.active').classList.add('is-hidden');
-        document.querySelector('.overlay').classList.add('is-hidden');
+        document.querySelector('.modal.active').classList.remove('active');
+        document.querySelector('.overlay').classList.remove('active');
       }
     },
     false
   );
 
   overlay.addEventListener('click', function () {
-    document.querySelector('.modal.active').classList.add('is-hidden');
-    this.classList.add('is-hidden');
+    document.querySelector('.modal.active').classList.remove('active');
+    this.classList.remove('active');
   });
 }); // end ready
