@@ -18,24 +18,27 @@ data-modal-am-room
         </svg>
       </button>
       <p class="modal-name tittle-modal-room">
-        BOOK <span class="italic-room">A ROOM</span>
-      </p>
-      <form class="modal-form">
+        BOOK <span class="italic-room">A ROOM</span></p>
+
+      <div class="modal-form">
         <div class="list-room">
           <div class="window-block">
-            <laber class="modal-text" for="name">Your name</laber>
-            <input
+            <label class="modal-label-room"></label>
+            <div class="input-wrap-room">
+            <input class="modal-text-room" placeholder="Your name" required minlength="3">
+            <!-- <input
               class="modal-input bgr-room"
               type="name"
               name="name"
               id="name"
               placeholder=" "
-            />
-            <label class="text-comment" id="name"
-              >Who should book a table for?
-            </label>
+            /> -->
           </div>
-          <div class="window-block">
+            <p class="text-comment" id="name"
+              >Who should book a table for?
+          </p>
+          </div>
+          <!-- <div class="window-block">
             <laber class="modal-text" for="tel">+ 38 () </laber>
             <input
               class="modal-input bgr-room"
@@ -47,9 +50,9 @@ data-modal-am-room
           Phone number must be at least 8 digits, not contain letters or other symbols"
             />
             <label class="text-comment" id="tel">Phone number</label>
-          </div>
+          </div> -->
 
-          <div class="window-block-svg">
+          <!-- <div class="window-block-svg">
             <laber for="people bgr-room" class="modal-text"
               >Today
               <span>
@@ -65,10 +68,9 @@ data-modal-am-room
               <option value="+7">Next week</option>
               <option value="-7">Last week</option>
             </select>
-            <!-- <input class="modal-input bgr-room " type="text" placeholder=" " /> -->
             <label class="text-comment">Check-in date</label>
-          </div>
-          <div class="window-block-svg">
+          </div> -->
+          <!-- <div class="window-block-svg">
             <laber class="modal-text bgr-room"
               >25/04/2023
               <span>
@@ -83,9 +85,9 @@ data-modal-am-room
               placeholder=" "
             />
             <label class="text-comment">Check-in date</label>
-          </div>
+          </div> -->
 
-          <div class="window-block-svg">
+          <!-- <div class="window-block-svg">
             <laber class="modal-text" type="text"
               >Double suite
               <span>
@@ -101,16 +103,15 @@ data-modal-am-room
               <option value="3">Single economy room</option>
             </select>
 
-            <!-- <input class="modal-input bgr-room" type="text" placeholder=" " /> -->
             <label class="text-comment">Number category</label>
-          </div>
+          </div> -->
         </div>
         <div class="btn-modal-room-center">
           <button class="btn btn-black modal-btn modal-block" type="submit">
             SMAKE A RESERVATION
           </button>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </div>
