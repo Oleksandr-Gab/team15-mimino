@@ -134,10 +134,10 @@
   color: #d8d7d7;
 }
 .window-block-svg {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .tittle-modal-room {
@@ -163,6 +163,25 @@
 /* .modal-input-room:not(:placeholder-shown) {
   background-color: #ffffff;
 } */
+.modal-input-room:not(:placeholder-shown):valid {
+  background-color: #121212;
+}
+.modal-input-room::placeholder{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.Numb-people-list-room{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
 
 .btn-modal-room-center {
   display: flex;
