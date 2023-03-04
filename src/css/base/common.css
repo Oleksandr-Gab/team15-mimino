@@ -12,3 +12,7 @@ body {
   pointer-events: none;
   display: none;
 }
+
+.no-skroll {
+  overflow: hidden;
+}
