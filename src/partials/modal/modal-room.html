@@ -6,14 +6,14 @@ data-modal-page-page-room-room
 data-modal-am-room
 >
   <div class="modal" data-modal="room">
-    <div class="modal-container container-abs">
-      <button class="modal-close-btn btn-frame "
+    <div class="container-abs">
+      <button class="modal-close-btn-room btn-frame "
       data-modal-room-close
       data-modal-room-page-hot-close
       data-modal-room-page-room-close
       data-modal-room-am-close
       >
-        <svg class="close-svg svg-position" >
+        <svg class="close-svg svg-position" width="28" height="28" >
           <use href="./img/sprayt.svg#icon-close"></use>
         </svg>
       </button>
@@ -34,7 +34,6 @@ data-modal-am-room
 
           <div class="window-block">
             <div class="">
-            <!-- <laber class="modal-text" for="tel"> </laber> -->
             </div>
             <div class="input-wrap-room">
             <input
@@ -49,7 +48,7 @@ data-modal-am-room
             <p class="text-comment" id="tel">Phone number</p>
           </div>
 
-          <div class="window-block-svg">
+          <div class="window-block">
             <div class="">
             <laber class="modal-text"></laber>
             </div>
@@ -66,20 +65,24 @@ data-modal-am-room
           </div>
             <label class="text-comment">Check-in date</label>
           </div>
-          <div class="window-block-svg">
-            <div class="">
-            <laber class="modal-text bgr-room"></laber>
+          <div class="window-block">
+            <div class="input-wrap-room-2">
             <div class="input-wrap-room">
             <input
               class="modal-input bgr-room-date"
               type="date"
-              placeholder=" "
+              id="date" aria-required="true" aria-invalid="false"
+              placeholder="" 
+              onchange="this.className=(this.value!=''?'has-value':'')" 
+              value=""
             />
              </div>
             <p class="text-comment">Check-in date</p>
          </div>
 
-          <div class="window-block-svg">
+          
+        </div>
+          <div class="window-block">
             <div class="">
             <laber class="modal-text"></laber>
             </div>
@@ -95,13 +98,14 @@ data-modal-am-room
           </div>
             <label class="text-comment">Number category</label>
           </div>
-        </div>
-        <div class="btn-modal-room-center">
+
+        
+      </div>
+      <div class="btn-modal-room-center">
           <button class="btn btn-black modal-btn modal-block" type="submit">
             SMAKE A RESERVATION
           </button>
         </div>
-      </div>
     </div>
   </div>
 </div>
