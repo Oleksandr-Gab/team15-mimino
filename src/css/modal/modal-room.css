@@ -1,61 +1,275 @@
-.bgr-room{
-    background-color: var(--brand-color);
-    border-top-color:var(--brand-color);
-    border-right-color:var(--brand-color);
-    border-left-color: var(--brand-color);
-    border-bottom-width: 0.8px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(247, 247, 247, 0.2);
-}
-.bgr-room:hover,.bgr-room:focus,
- .bgr-room:visited, .bgr-room:active  {
-    background-color:#ffffff;
-}
-.text-comment{
-    font-size: 8px;
-    line-height:1.5;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #D8D7D7;
-}
-.window-block{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 32px;
-}
-.tittle-modal-room{
-    margin-bottom: 40px;
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
 }
 
-.modal-input:not(:placeholder-shown){
-    background-color:#ffffff;
+/* Стили для модальных окон */
+
+.modal-room {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
 }
-.modal-block{
-    display: flex;
+
+/* Стили для активных классов подложки и окна */
+
+.modal-room.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
-.svg-position{
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
 }
-.container-abs{
+.modal-room {
+  width: 375px;
+  margin: 0 auto;
+  background-color: var(--brand-color);
+  z-index: 2;
+}
+.bgr-room {
+  /* width: 240px;
+  background-color: var(--brand-color);
+  border-top-color: var(--brand-color);
+  border-right-color: var(--brand-color);
+  border-left-color: var(--brand-color);
+  border-bottom-width: 0.8px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(247, 247, 247, 0.2); */
+}
+.bgr-room-date {
+  background-color: var(--brand-color);
+  width: 233px;
+}
+/* .bgr-room:hover,
+.bgr-room:focus,
+.bgr-room:visited,
+.bgr-room:active {
+  background-color: #ffffff;
+} */
+.text-comment {
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d8d7d7;
+}
+.window-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #f7f7f7;
+}
+.modal-label-room{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7; 
+}
+.input-wrap-room{
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+}
+.modal-text-room{
+  width: 100%;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  border: none;
+  background-color: inherit;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  color: #d8d7d7;
+}
+.window-block-svg {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.tittle-modal-room {
+  margin-bottom: 40px;
+}
+.modal-input-room{
+  width: 100%;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  border: none;
+  background-color: inherit;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  color: #d8d7d7;
+}
+/* .modal-input-room:not(:placeholder-shown) {
+  background-color: #ffffff;
+} */
+.modal-input-room:not(:placeholder-shown):valid {
+  background-color: #121212;
+}
+.modal-input-room::placeholder{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.Numb-people-list-room{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+select#Numb-people {
+  width: 100%;
+  color: #d8d1d1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../../img/Arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.btn-modal-room-center {
+  display: flex;
+  justify-content: center;
+}
+.svg-position {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+/* .container-abs{
     position: relative;
+} */
+.btn-frame {
+  border-color: var(--brand-color);
+}
+.modal-close-btn {
+  top: 14px;
+  right: 14px;
+}
+.italic-room {
+  font-style: italic;
+}
+
+.suite-type::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+}
+
+.modal-container {
+  padding-bottom: 40px;
+}
+.icon-modal-room {
+  position: absolute;
+  right: 60px;
 }
 @media screen and (min-width: 375px) {
-    .modal-container {
-      width: 375px;
-    }
+  .bgr-room {
+    width: 287px;
   }
-  
-  @media screen and (min-width: 768px) {
-    .modal-container {
-      width: 628px;
-     
-    }
+  .icon-modal-room {
+    right: 0;
   }
-  @media screen and (min-width: 1440px) {
-    .modal-container {
-      width: 628px;
-    }
+  .bgr-room-date {
+    width: 100%;
   }
-  
+}
+
+@media screen and (min-width: 768px) {
+  .modal-container {
+    max-width: 628px;
+    padding-top: 32px;
+    padding-bottom: 60px;
+  }
+  .modal {
+    width: 628px;
+  }
+  .list-room {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .bgr-room {
+    width: 266px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modal {
+    width: 628px;
+  }
+  .modal-container {
+    max-width: 628px;
+  }
+}

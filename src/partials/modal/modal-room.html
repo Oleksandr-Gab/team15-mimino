@@ -1,51 +1,107 @@
-<div class="backdrop ">
-    <div class="modal">
-      <div class="modal-container container-abs">
-        <button class="modal-close-btn">
-          <svg class="close-svg svg-position" widht="28" height="28">
-            <use href="./img/sprayt.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-name tittle-modal-room">BOOK A ROOM</p>
-        <form class="modal-form">
-            <div class="window-block">
-          <laber class="modal-text" for="name">Your name</laber>
-          <input class="modal-input bgr-room" type="name" name="name" id="name" placeholder=" " />
-          <label class="text-comment">Who should book a table for? </label>
-        </div>
-        <div class="window-block">
-          <laber class="modal-text">+ 38 ()</laber>
-          <input class="modal-input bgr-room" type="tel" placeholder=" " pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" />
-          <label class="text-comment">Phone number</label>
-        </div>
-        <div class="window-block">
-          <laber for="people bgr-room" class="modal-text">Today</laber>
-          <select class="" name="people" id="people">
-            <option value="0">Today</option>
-            <option value="+1">Tomorrow</option>
-            <option value="-1">Yesterday</option>
-            <option value="+7">Next week</option>
-            <option value="-7">Last week</option>
-          </select>
-            <input class="modal-input bgr-room " type="text" placeholder=" " />
-            <label class="text-comment">Check-in date</label>
-        </div>
-        <div class="window-block">
-            <laber class="modal-text">25/04/2023</laber>
-            <input class="modal-input bgr-room" type="date" placeholder=" " />
-            <label class="text-comment">Check-in date</label>
+<div class="backdrop is-hidden"
+data-modal-room
+data-modal-hot-room
+data-modal-page-hot-room
+data-modal-page-page-room-room
+data-modal-am-room
+>
+  <div class="modal" data-modal="room">
+    <div class="modal-container container-abs">
+      <button class="modal-close-btn btn-frame "
+      data-modal-room-close
+      data-modal-room-page-hot-close
+      data-modal-room-page-room-close
+      data-modal-room-am-close
+      >
+        <svg class="close-svg svg-position" >
+          <use href="./img/sprayt.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-name tittle-modal-room">
+        BOOK <span class="italic-room">A ROOM</span></p>
+
+      <div class="modal-form">
+        <div class="list-room">
+          <div class="window-block">
+            <label class="modal-label-room"></label>
+            <div class="input-wrap-room">
+            <input class="modal-text-room" placeholder="Your name" required minlength="3">
+              </div>
+            <p class="text-comment" id="name"
+              >Who should book a table for?
+          </p>
           </div>
 
           <div class="window-block">
-            <laber class="modal-text">Double suite</laber>
-            <input class="modal-input bgr-room" type="text" placeholder=" " />
-            <label class="text-comment">Number category</label>
+            <div class="">
+            <!-- <laber class="modal-text" for="tel"> </laber> -->
+            </div>
+            <div class="input-wrap-room">
+            <input
+              class="modal-input-room bgr-room"
+              id="tel"
+              type="tel"
+              placeholder="+ 38 ( )"
+              name="phone"
+              required
+              />
+            </div>
+            <p class="text-comment" id="tel">Phone number</p>
           </div>
 
+          <div class="window-block-svg">
+            <div class="">
+            <laber class="modal-text"></laber>
+            </div>
+            <div class="input-wrap-room">
+            <select id="Numb-people" name="Numb-people" class="modal-input-room" placeholder="" required>
+              <option value="1" class="Numb-people-list-room">
+                TODAY
+              </option>
+              <option value="1">Tomorrow</option>
+              <option value="1">Yesterday</option>
+              <option value="1">Next week</option>
+              <option value="1">Last week</option>
+            </select>
+          </div>
+            <label class="text-comment">Check-in date</label>
+          </div>
+          <div class="window-block-svg">
+            <div class="">
+            <laber class="modal-text bgr-room"></laber>
+            <div class="input-wrap-room">
+            <input
+              class="modal-input bgr-room-date"
+              type="date"
+              placeholder=" "
+            />
+             </div>
+            <p class="text-comment">Check-in date</p>
+         </div>
+
+          <div class="window-block-svg">
+            <div class="">
+            <laber class="modal-text"></laber>
+            </div>
+            <div class="input-wrap-room">
+              <select id="Numb-people" name="Numb-people" class="modal-input-room" placeholder="">
+                <option value="1" class="Numb-people-list-room">
+                  DOUBLE SUITE
+                </option>
+              <option value="1">Single suite</option>
+              <option value="1">Double economy room</option>
+              <option value="1">Single economy room</option>
+            </select>
+          </div>
+            <label class="text-comment">Number category</label>
+          </div>
+        </div>
+        <div class="btn-modal-room-center">
           <button class="btn btn-black modal-btn modal-block" type="submit">
             SMAKE A RESERVATION
           </button>
-        </form>
+        </div>
       </div>
     </div>
   </div>
+</div>
