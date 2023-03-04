@@ -11,14 +11,14 @@
   padding: 8px 18px;
   background-color: transparent;
   display: inline-block;
-  
-   transform: scale(1);
+
+  transform: scale(1);
   transition: transform var(--tcb), color var(--tcb),
     background-color var(--tcb);
 }
 
 .btn:is(:hover, :focus) {
-  color:#fff;
+  color: #fff;
   background-color: var(--brand-color);
   color: var(--light-color);
   transform: scale(0.9);
@@ -38,9 +38,7 @@
 }
 @media screen and (min-width: 768px) {
   .btn {
-    line-height: 1.71;
     padding: 8px 24px;
-    
   }
 }
 @media screen and (min-width: 1440px) {
