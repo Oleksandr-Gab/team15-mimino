@@ -24,9 +24,8 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/team15-mimino/assets/hotel-22d9a9dc.js"></script>
-    <link rel="modulepreload" crossorigin href="/team15-mimino/assets/modal-price-page-hotel-hero-035f4c94.js">
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-page-hotel-hero-d5f7e5dd.css">
+    <script type="module" crossorigin src="/team15-mimino/assets/modals-0d372217.js"></script>
+    <link rel="stylesheet" href="/team15-mimino/assets/modals-c1759fc7.css">
     <link rel="stylesheet" href="/team15-mimino/assets/hotel-644dc04a.css">
   </head>
   <body>
@@ -145,12 +144,14 @@
     <div class="hero-hotel-tit">
       <h2 class="title-hotel">hotel</h2>
       <div class="btn-hotel-hero">
-        <button class="btn"
-        type="button" 
-        data-modal-room-page-hot-open>
+        <button class="btn js-open-modal" type="button" data-modal="room">
           book a room
         </button>
-        <button type="button" class="fs-btn-2 btn" data-modal-page-hotel-price-hero-open>
+        <button
+          type="button"
+          class="fs-btn-2 btn js-open-modal"
+          data-modal="price"
+        >
           View Prices
         </button>
       </div>
@@ -249,152 +250,161 @@
       <li class="room-img-one">
         <picture>
           <source
-          srcset="/team15-mimino/assets/dlr2-desk-1x-6667c562.jpg 1x, /team15-mimino/assets/dlr2-desk-2x-12d01c87.jpg 2x"
-          media="(min-width: 1440px)"
-          >
+            srcset="/team15-mimino/assets/dlr2-desk-1x-6667c562.jpg 1x, /team15-mimino/assets/dlr2-desk-2x-12d01c87.jpg 2x"
+            media="(min-width: 1440px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr3-tab-1x-af1d7b38.jpg 1x, /team15-mimino/assets/dlr3-tab-2x-06468a10.jpg 2x"
-          media="(min-width: 768px)"
-          >
+            srcset="/team15-mimino/assets/dlr3-tab-1x-af1d7b38.jpg 1x, /team15-mimino/assets/dlr3-tab-2x-06468a10.jpg 2x"
+            media="(min-width: 768px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg 1x, /team15-mimino/assets/dlr1-mob-2x-c838d384.jpg 2x"
-          media="(max-width: 767px)"
-          >
+            srcset="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg 1x, /team15-mimino/assets/dlr1-mob-2x-c838d384.jpg 2x"
+            media="(max-width: 767px)"
+          />
           <img
-          src="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg" 
-          alt="bedroom">
+            src="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg"
+            alt="bedroom"
+          />
         </picture>
       </li>
 
       <li class="room-img-two">
         <picture>
           <source
-          srcset="/team15-mimino/assets/dlr3-desk-1x-c738becf.jpg 1x, /team15-mimino/assets/dlr3-desk-2x-0961f9fb.jpg 2x"
-          media="(min-width: 1440px)"
-          >
+            srcset="/team15-mimino/assets/dlr3-desk-1x-c738becf.jpg 1x, /team15-mimino/assets/dlr3-desk-2x-0961f9fb.jpg 2x"
+            media="(min-width: 1440px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr1-tab-1x-10d75047.jpg 1x, /team15-mimino/assets/dlr1-tab-2x-a3b8a4b5.jpg 2x"
-          media="(min-width: 768px)"
-          >
+            srcset="/team15-mimino/assets/dlr1-tab-1x-10d75047.jpg 1x, /team15-mimino/assets/dlr1-tab-2x-a3b8a4b5.jpg 2x"
+            media="(min-width: 768px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr2-mob-1x-60f71e17.jpg 1x, /team15-mimino/assets/dlr2-mob-2x-c6c22018.jpg 2x"
-          media="(max-width: 767px)"
-          >
+            srcset="/team15-mimino/assets/dlr2-mob-1x-60f71e17.jpg 1x, /team15-mimino/assets/dlr2-mob-2x-c6c22018.jpg 2x"
+            media="(max-width: 767px)"
+          />
           <img
-          src="/team15-mimino/assets/dlr2-mob-1x-60f71e17.jpg" 
-          alt="bathroom">
+            src="/team15-mimino/assets/dlr2-mob-1x-60f71e17.jpg"
+            alt="bathroom"
+          />
         </picture>
       </li>
 
       <li class="room-img-three">
         <picture>
           <source
-          srcset="/team15-mimino/assets/dlr1-desk-1x-c2455d92.jpg 1x, /team15-mimino/assets/dlr1-desk-2x-4083ec21.jpg 2x"
-          media="(min-width: 1440px)"
-          >
+            srcset="/team15-mimino/assets/dlr1-desk-1x-c2455d92.jpg 1x, /team15-mimino/assets/dlr1-desk-2x-4083ec21.jpg 2x"
+            media="(min-width: 1440px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr2-tab-1x-82c06701.jpg 1x, /team15-mimino/assets/dlr2-tab-2x-a22706ee.jpg 2x"
-          media="(min-width: 768px)"
-          >
+            srcset="/team15-mimino/assets/dlr2-tab-1x-82c06701.jpg 1x, /team15-mimino/assets/dlr2-tab-2x-a22706ee.jpg 2x"
+            media="(min-width: 768px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr3-mob-1x-f799b97d.jpg 1x, /team15-mimino/assets/dlr3-mob-2x-5594224a.jpg 2x"
-          media="(max-width: 767px)"
-          >
+            srcset="/team15-mimino/assets/dlr3-mob-1x-f799b97d.jpg 1x, /team15-mimino/assets/dlr3-mob-2x-5594224a.jpg 2x"
+            media="(max-width: 767px)"
+          />
           <img
-          src="/team15-mimino/assets/dlr3-mob-1x-f799b97d.jpg" 
-          alt="kitchen">
+            src="/team15-mimino/assets/dlr3-mob-1x-f799b97d.jpg"
+            alt="kitchen"
+          />
         </picture>
       </li>
     </ul>
     <ul class="hotel-room-list-tab">
-        <li class="hotel-box-img">
-          <picture class="room-img-two-tab">
-            <source
+      <li class="hotel-box-img">
+        <picture class="room-img-two-tab">
+          <source
             srcset="/team15-mimino/assets/dlr3-desk-1x-c738becf.jpg 1x, /team15-mimino/assets/dlr3-desk-2x-0961f9fb.jpg 2x"
             media="(min-width: 1440px)"
-            >
-            <source
+          />
+          <source
             srcset="/team15-mimino/assets/dlr1-tab-1x-10d75047.jpg 1x, /team15-mimino/assets/dlr1-tab-2x-a3b8a4b5.jpg 2x"
             media="(min-width: 768px)"
-            >
-            <source
+          />
+          <source
             srcset="/team15-mimino/assets/dlr2-mob-1x-60f71e17.jpg 1x, /team15-mimino/assets/dlr2-mob-2x-c6c22018.jpg 2x"
             media="(max-width: 767px)"
-            >
-            <img
-            src="/team15-mimino/assets/dlr2-mob-1x-60f71e17.jpg" 
-            alt="bathroom">
-          </picture>
-          
-          <picture class="room-img-three-tab">
-            <source
+          />
+          <img
+            src="/team15-mimino/assets/dlr2-mob-1x-60f71e17.jpg"
+            alt="bathroom"
+          />
+        </picture>
+
+        <picture class="room-img-three-tab">
+          <source
             srcset="/team15-mimino/assets/dlr1-desk-1x-c2455d92.jpg 1x, /team15-mimino/assets/dlr1-desk-2x-4083ec21.jpg 2x"
             media="(min-width: 1440px)"
-            >
-            <source
+          />
+          <source
             srcset="/team15-mimino/assets/dlr2-tab-1x-82c06701.jpg 1x, /team15-mimino/assets/dlr2-tab-2x-a22706ee.jpg 2x"
             media="(min-width: 768px)"
-            >
-            <source
+          />
+          <source
             srcset="/team15-mimino/assets/dlr3-mob-1x-f799b97d.jpg 1x, /team15-mimino/assets/dlr3-mob-2x-5594224a.jpg 2x"
             media="(max-width: 767px)"
-            >
-            <img
-            src="/team15-mimino/assets/dlr3-mob-1x-f799b97d.jpg" 
-            alt="kitchen">
-          </picture>
-        </li>
+          />
+          <img
+            src="/team15-mimino/assets/dlr3-mob-1x-f799b97d.jpg"
+            alt="kitchen"
+          />
+        </picture>
+      </li>
 
       <li class="room-img-one-tab">
         <picture>
           <source
-          srcset="/team15-mimino/assets/dlr2-desk-1x-6667c562.jpg 1x, /team15-mimino/assets/dlr2-desk-2x-12d01c87.jpg 2x"
-          media="(min-width: 1440px)"
-          >
+            srcset="/team15-mimino/assets/dlr2-desk-1x-6667c562.jpg 1x, /team15-mimino/assets/dlr2-desk-2x-12d01c87.jpg 2x"
+            media="(min-width: 1440px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr3-tab-1x-af1d7b38.jpg 1x, /team15-mimino/assets/dlr3-tab-2x-06468a10.jpg 2x"
-          media="(min-width: 768px)"
-          >
+            srcset="/team15-mimino/assets/dlr3-tab-1x-af1d7b38.jpg 1x, /team15-mimino/assets/dlr3-tab-2x-06468a10.jpg 2x"
+            media="(min-width: 768px)"
+          />
           <source
-          srcset="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg 1x, /team15-mimino/assets/dlr1-mob-2x-c838d384.jpg 2x"
-          media="(max-width: 767px)"
-          >
+            srcset="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg 1x, /team15-mimino/assets/dlr1-mob-2x-c838d384.jpg 2x"
+            media="(max-width: 767px)"
+          />
           <img
-          src="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg" 
-          alt="bedroom">
+            src="/team15-mimino/assets/dlr1-mob-1x-757cc7a4.jpg"
+            alt="bedroom"
+          />
         </picture>
       </li>
     </ul>
-      <div class="hotel-luxury-container-senter">
-        <div class="hotel-luxury-container">
-          <div class="hotel-luxury-btn-desktop">
-            <h2 class="title-hotel-room">DOUBLE LUXURY ROOM</h2>
-            <div class="hotel-luxury-btn-top">
-              <a href="./room.html" class="btn">More details</a>
-              <button type="button" class="btn">View prices</button>
-            </div>
-          </div>
-          <div class="about-hotel-room">
-            <p class="double-hotel-room-one">
-              Experience luxury in our Double Luxury Room at Mimino Hotel. This spacious room features a comfortable bed, private bathroom, flat-screen TV, and high-speed Wi-Fi. 
-              Climate control, blackout curtains, and soundproofing ensure a peaceful night's sleep.
-            </p>
-            <p class="double-hotel-room-two">
-              Relax after a busy day at the writing desk or armchair. Book now for a convenient and comfortable stay.
-            </p>
-          </div>
-          <div class="hotel-luxury-btn">
+    <div class="hotel-luxury-container-senter">
+      <div class="hotel-luxury-container">
+        <div class="hotel-luxury-btn-desktop">
+          <h2 class="title-hotel-room">DOUBLE LUXURY ROOM</h2>
+          <div class="hotel-luxury-btn-top">
             <a href="./room.html" class="btn">More details</a>
-            <button type="button" class="btn"
-            data-modal-page-hotel-price-lux-open
-            >View prices</button>
+            <button type="button" class="btn js-open-modal" data-modal="price">
+              View prices
+            </button>
           </div>
         </div>
+        <div class="about-hotel-room">
+          <p class="double-hotel-room-one">
+            Experience luxury in our Double Luxury Room at Mimino Hotel. This
+            spacious room features a comfortable bed, private bathroom,
+            flat-screen TV, and high-speed Wi-Fi. Climate control, blackout
+            curtains, and soundproofing ensure a peaceful night's sleep.
+          </p>
+          <p class="double-hotel-room-two">
+            Relax after a busy day at the writing desk or armchair. Book now for
+            a convenient and comfortable stay.
+          </p>
+        </div>
+        <div class="hotel-luxury-btn">
+          <a href="./room.html" class="btn">More details</a>
+          <button type="button" class="btn js-open-modal" data-modal="price">
+            View prices
+          </button>
+        </div>
       </div>
+    </div>
   </div>
 </section>
-
-
 
       <section class="hotel-triple">
   <div class="container">
@@ -484,52 +494,50 @@
         </picture>
       </li>
 
-        <li class="triple-box-img">
-
-          <picture class="triple-img-three-tab">
-
-            <source
-              srcset="/team15-mimino/assets/trr3-desk-1x-bdf8b0bd.jpg 1x, /team15-mimino/assets/trr3-desk-2x-a2b28b57.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="/team15-mimino/assets/trr2-tab-1x-3787efde.jpg 1x, /team15-mimino/assets/trr2-tab-2x-af37322a.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="/team15-mimino/assets/trr2-mob-1x-352f7305.jpg 1x, /team15-mimino/assets/trr2-mob-2x-50aa107d.jpg 2x"
-              media="(max-width: 767px)"
-            />
-            <img
-              src="/team15-mimino/assets/trr2-mob-1x-352f7305.jpg"
-              alt="bathroom"
-            />
-          </picture>
-          <picture class="triple-img-two-tab">
-            <source
-              srcset="/team15-mimino/assets/trr1-desk-1x-3638149e.jpg 1x, /team15-mimino/assets/trr1-desk-2x-0927c4e6.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="/team15-mimino/assets/trr3-tab-1x-cb0bb50a.jpg 1x, /team15-mimino/assets/trr3-tab-2x-5e7b6862.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="/team15-mimino/assets/trr3-mob-1x-7729d974.jpg 1x, /team15-mimino/assets/trr3-mob-2x-31a5eee5.jpg 2x"
-              media="(max-width: 767px)"
-            />
-            <img
-              src="/team15-mimino/assets/trr3-mob-1x-7729d974.jpg"
-              alt="kitchen"
-            />
-          </picture>
-        </li>
+      <li class="triple-box-img">
+        <picture class="triple-img-three-tab">
+          <source
+            srcset="/team15-mimino/assets/trr3-desk-1x-bdf8b0bd.jpg 1x, /team15-mimino/assets/trr3-desk-2x-a2b28b57.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/team15-mimino/assets/trr2-tab-1x-3787efde.jpg 1x, /team15-mimino/assets/trr2-tab-2x-af37322a.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/team15-mimino/assets/trr2-mob-1x-352f7305.jpg 1x, /team15-mimino/assets/trr2-mob-2x-50aa107d.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/team15-mimino/assets/trr2-mob-1x-352f7305.jpg"
+            alt="bathroom"
+          />
+        </picture>
+        <picture class="triple-img-two-tab">
+          <source
+            srcset="/team15-mimino/assets/trr1-desk-1x-3638149e.jpg 1x, /team15-mimino/assets/trr1-desk-2x-0927c4e6.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/team15-mimino/assets/trr3-tab-1x-cb0bb50a.jpg 1x, /team15-mimino/assets/trr3-tab-2x-5e7b6862.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/team15-mimino/assets/trr3-mob-1x-7729d974.jpg 1x, /team15-mimino/assets/trr3-mob-2x-31a5eee5.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/team15-mimino/assets/trr3-mob-1x-7729d974.jpg"
+            alt="kitchen"
+          />
+        </picture>
+      </li>
     </ul>
     <div class="hotel-triple-container-senter">
       <div class="triple-luxury-container">
         <div class="hotel-triple-btn-top">
           <a href="./room.html" class="btn">More details</a>
-          <button type="button" class="btn" data-modal-price-open>
+          <button type="button" class="btn js-open-modal" data-modal="price">
             View prices
           </button>
         </div>
@@ -551,7 +559,7 @@
         </div>
         <div class="hotel-triple-btn">
           <a href="./room.html" class="btn">More details</a>
-          <button type="button" class="btn" data-modal-page-hotel-price-tri-open>
+          <button type="button" class="btn js-open-modal" data-modal="price">
             View prices
           </button>
         </div>
@@ -693,7 +701,11 @@
         </div>
         <div class="fs-buttons">
           <a href="./room.html" class="btn fs-btn-2">More details</a>
-          <button type="button" class="fs-btn-2 btn" data-modal-page-hotel-price-four-open>
+          <button
+            type="button"
+            class="fs-btn-2 btn js-open-modal"
+            data-modal="price"
+          >
             View Prices
           </button>
         </div>
@@ -754,118 +766,9 @@
 </footer>
 
 
-    <div class="backdrop is-hidden"
-data-modal-room
-data-modal-hot-room
-data-modal-page-hot-room
-data-modal-page-page-room-room
-data-modal-am-room
->
-  <div class="modal" data-modal="room">
-    <div class="modal-container container-abs">
-      <button class="modal-close-btn btn-frame "
-      data-modal-room-close
-      data-modal-room-page-hot-close
-      data-modal-room-page-room-close
-      data-modal-room-am-close
-      >
-        <svg class="close-svg svg-position" >
-          <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
-        </svg>
-      </button>
-      <p class="modal-name tittle-modal-room">
-        BOOK <span class="italic-room">A ROOM</span></p>
-
-      <div class="modal-form">
-        <div class="list-room">
-          <div class="window-block">
-            <label class="modal-label-room"></label>
-            <div class="input-wrap-room">
-            <input class="modal-text-room" placeholder="Your name" required minlength="3">
-              </div>
-            <p class="text-comment" id="name"
-              >Who should book a table for?
-          </p>
-          </div>
-
-          <div class="window-block">
-            <div class="">
-            <!-- <laber class="modal-text" for="tel"> </laber> -->
-            </div>
-            <div class="input-wrap-room">
-            <input
-              class="modal-input-room bgr-room"
-              id="tel"
-              type="tel"
-              placeholder="+ 38 ( )"
-              name="phone"
-              required
-              />
-            </div>
-            <p class="text-comment" id="tel">Phone number</p>
-          </div>
-
-          <div class="window-block-svg">
-            <div class="">
-            <laber class="modal-text"></laber>
-            </div>
-            <div class="input-wrap-room">
-            <select id="Numb-people" name="Numb-people" class="modal-input-room" placeholder="" required>
-              <option value="1" class="Numb-people-list-room">
-                TODAY
-              </option>
-              <option value="1">Tomorrow</option>
-              <option value="1">Yesterday</option>
-              <option value="1">Next week</option>
-              <option value="1">Last week</option>
-            </select>
-          </div>
-            <label class="text-comment">Check-in date</label>
-          </div>
-          <div class="window-block-svg">
-            <div class="">
-            <laber class="modal-text bgr-room"></laber>
-            <div class="input-wrap-room">
-            <input
-              class="modal-input bgr-room-date"
-              type="date"
-              placeholder=" "
-            />
-             </div>
-            <p class="text-comment">Check-in date</p>
-         </div>
-
-          <div class="window-block-svg">
-            <div class="">
-            <laber class="modal-text"></laber>
-            </div>
-            <div class="input-wrap-room">
-              <select id="Numb-people" name="Numb-people" class="modal-input-room" placeholder="">
-                <option value="1" class="Numb-people-list-room">
-                  DOUBLE SUITE
-                </option>
-              <option value="1">Single suite</option>
-              <option value="1">Double economy room</option>
-              <option value="1">Single economy room</option>
-            </select>
-          </div>
-            <label class="text-comment">Number category</label>
-          </div>
-        </div>
-        <div class="btn-modal-room-center">
-          <button class="btn btn-black modal-btn modal-block" type="submit">
-            SMAKE A RESERVATION
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <div class="backdrops is-hidden" data-modal-page-hotel-hero-price data-modal-page-hotel-lux-price
-  data-modal-page-hotel-tri-price data-modal-page-hotel-four-price data-modal-page-room>
-  <div class="modal modal-price">
-    <button class="modal-close-btn" data-modal-page-hotel-price-hero-close data-modal-page-room-close>
+    <div class="backdrops overlay js-overlay-modal">
+  <div class="modal modal-price" data-modal="price">
+    <button type="button" class="modal-close-btn js-modal-close">
       <svg class="close-svg svg-position">
         <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
       </svg>
@@ -884,7 +787,15 @@ data-modal-am-room
           <label for="quickly" class="label-prices">number of nights</label>
         </div>
         <div class="form-number">
-          <input type="number" class="modal-input nights" name="uah" min="1000" value="1000" id="uah" placeholder="" />
+          <input
+            type="number"
+            class="modal-input nights"
+            name="uah"
+            min="1000"
+            value="1000"
+            id="uah"
+            placeholder=""
+          />
           <label for="uah" class="label-prices">uah</label>
         </div>
       </div>
@@ -895,17 +806,313 @@ data-modal-am-room
       </div>
     </form>
   </div>
+  <div class="modal modal-room" data-modal="room">
+    <div class="modal-container container-abs">
+      <button type="button" class="modal-close-btn btn-frame js-modal-close">
+        <svg class="close-svg svg-position">
+          <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-name tittle-modal-room">
+        BOOK <span class="italic-room">A ROOM</span>
+      </p>
+
+      <div class="modal-form">
+        <div class="list-room">
+          <div class="window-block">
+            <label class="modal-label-room"></label>
+            <div class="input-wrap-room">
+              <input
+                class="modal-text-room"
+                placeholder="Your name"
+                required
+                minlength="3"
+              />
+            </div>
+            <p class="text-comment" id="name">Who should book a table for?</p>
+          </div>
+
+          <div class="window-block">
+            <div class="">
+              <!-- <laber class="modal-text" for="tel"> </laber> -->
+            </div>
+            <div class="input-wrap-room">
+              <input
+                class="modal-input-room bgr-room"
+                id="tel"
+                type="tel"
+                placeholder="+ 38 ( )"
+                name="phone"
+                required
+              />
+            </div>
+            <p class="text-comment" id="tel">Phone number</p>
+          </div>
+
+          <div class="window-block-svg">
+            <div class="">
+              <laber class="modal-text"></laber>
+            </div>
+            <div class="input-wrap-room">
+              <select
+                id="Numb-people"
+                name="Numb-people"
+                class="modal-input-room"
+                placeholder=""
+                required
+              >
+                <option value="1" class="Numb-people-list-room">TODAY</option>
+                <option value="1">Tomorrow</option>
+                <option value="1">Yesterday</option>
+                <option value="1">Next week</option>
+                <option value="1">Last week</option>
+              </select>
+            </div>
+            <label class="text-comment">Check-in date</label>
+          </div>
+          <div class="window-block-svg">
+            <div class="">
+              <laber class="modal-text bgr-room"></laber>
+              <div class="input-wrap-room">
+                <input
+                  class="modal-input bgr-room-date"
+                  type="date"
+                  placeholder=" "
+                />
+              </div>
+              <p class="text-comment">Check-in date</p>
+            </div>
+
+            <div class="window-block-svg">
+              <div class="">
+                <laber class="modal-text"></laber>
+              </div>
+              <div class="input-wrap-room">
+                <select
+                  id="Numb-people"
+                  name="Numb-people"
+                  class="modal-input-room"
+                  placeholder=""
+                >
+                  <option value="1" class="Numb-people-list-room">
+                    DOUBLE SUITE
+                  </option>
+                  <option value="1">Single suite</option>
+                  <option value="1">Double economy room</option>
+                  <option value="1">Single economy room</option>
+                </select>
+              </div>
+              <label class="text-comment">Number category</label>
+            </div>
+          </div>
+          <div class="btn-modal-room-center">
+            <button class="btn btn-black modal-btn modal-block" type="submit">
+              SMAKE A RESERVATION
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-table" data-modal="table">
+    <div class="modal-cont modal-close-cross">
+      <button type="button" class="modal-close js-modal-close">
+        <svg class="modal-icon-cross" width="28" height="28">
+          <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-forms-1">
+      <div class="modal-forms-cont">
+        <form class="modal-list">
+          <label class="modal-lable"></label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="modal-input"
+              required
+              minlength="3"
+            />
+            <p class="modal-title">BOOK A TABLE</p>
+
+            <div class="modal-forms">
+              <div class="modal-forms-cont">
+                <div class="modal-list">
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your name"
+                      class="modal-input"
+                      required
+                      minlength="3"
+                    />
+                  </div>
+                  <p class="folse-plhpld">Who should book a table for?</p>
+                </div>
+
+                <div class="modal-forms-cont">
+                  <div class="modal-list modal-input-people">
+                    <div class="input-wrap">
+                      <select
+                        id="Numb-people"
+                        name="Numb-people"
+                        class="modal-input"
+                        required
+                      >
+                        <option value="" selected>NUMBER OF PEOPLE</option>
+
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="big">Wedding</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-forms-2">
+                  <div class="modal-forms-cont">
+                    <div class="modal-list">
+                      <div class="input-wrap">
+                        <input
+                          type="date"
+                          value=""
+                          class="input-txt"
+                          id="date"
+                          aria-required="true"
+                          aria-invalid="false"
+                          placeholder="TODAY"
+                          onchange="this.className=(this.value!=''?'has-value':'')"
+                        />
+                      </div>
+                      <p class="folse-plhpld">What date to book?</p>
+                    </div>
+                  </div>
+
+                  <div class="modal-forms-cont">
+                    <div class="modal-list">
+                      <!-- <label class="modal-list"></label> -->
+                      <div class="input-wrap">
+                        <input
+                          type="tel"
+                          name="phone"
+                          placeholder="+ 38 ( )"
+                          class="modal-input"
+                          required
+                        />
+                      </div>
+                      <p class="folse-plhpld">Phone number</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-btn-cont">
+                  <button type="submit" class="btn btn-black modal-btn">
+                    <span class="text-btn">MAKE A RESERVATION</span>
+                  </button>
+                </div>
+                <p class="modal-title">BOOK A TABLE</p>
+
+                <div class="modal-forms">
+                  <div class="modal-forms-cont">
+                    <div class="modal-list">
+                      <div class="input-wrap">
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Your name"
+                          class="modal-input"
+                          required
+                          minlength="3"
+                        />
+                      </div>
+                      <p class="folse-plhpld">Who should book a table for?</p>
+                    </div>
+
+                    <div class="modal-forms-cont">
+                      <div class="modal-list modal-input-people">
+                        <div class="input-wrap">
+                          <select
+                            id="Numb-people"
+                            name="Numb-people"
+                            class="modal-input"
+                            required
+                          >
+                            <option value="" selected>NUMBER OF PEOPLE</option>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                            <option value="seven">7</option>
+                            <option value="eight">8</option>
+                            <option value="big">Wedding</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-forms-2">
+                      <div class="modal-forms-cont">
+                        <div class="modal-list">
+                          <div class="input-wrap">
+                            <input
+                              type="date"
+                              value=""
+                              class="input-txt"
+                              id="date"
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="TODAY"
+                              onchange="this.className=(this.value!=''?'has-value':'')"
+                            />
+                          </div>
+                          <p class="folse-plhpld">What date to book?</p>
+                        </div>
+                      </div>
+
+                      <div class="modal-forms-cont">
+                        <div class="modal-list">
+                          <!-- <label class="modal-list"></label> -->
+                          <div class="input-wrap">
+                            <input
+                              type="tel"
+                              name="phone"
+                              placeholder="+ 38 ( )"
+                              class="modal-input"
+                              required
+                            />
+                          </div>
+                          <p class="folse-plhpld">Phone number</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-btn-cont">
+                      <button type="submit" class="btn btn-black modal-btn">
+                        <span class="text-btn">MAKE A RESERVATION</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
-    
-    
 
     
-    
-    
-    
-
-src\js\modal-page-room.js
     <!-- Slick -->
     <script
       type="text/javascript"

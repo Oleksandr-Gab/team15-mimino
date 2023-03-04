@@ -25,9 +25,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/team15-mimino/assets/index-a5789cea.js"></script>
-    <link rel="modulepreload" crossorigin href="/team15-mimino/assets/modal-price-page-hotel-hero-035f4c94.js">
-    <link rel="stylesheet" href="/team15-mimino/assets/modal-price-page-hotel-hero-d5f7e5dd.css">
+    <script type="module" crossorigin src="/team15-mimino/assets/modals-0d372217.js"></script>
+    <link rel="stylesheet" href="/team15-mimino/assets/modals-c1759fc7.css">
   </head>
   <body>
     <header class="header">
@@ -150,13 +149,17 @@
           <button
             class="btn btn-black js-open-modal"
             type="button"
-            data-modal-room-open
+            data-modal="room"
           >
             book a room
           </button>
         </li>
         <li class="main-hero-btn-item">
-          <button class="btn btn-black" type="button" data-modal-table-hero-open>
+          <button
+            type="button"
+            class="btn btn-black js-open-modal"
+            data-modal="table"
+          >
             book a table
           </button>
         </li>
@@ -417,7 +420,9 @@
       </div>
     </div>
     <div class="btn-rest">
-      <button type="button" class="btn" data-modal-table-rest-open>book a table</button>
+      <button type="button" class="btn js-open-modal" data-modal="table">
+        book a table
+      </button>
       <a href="./restaurant.html#menu-kichen" class="btn">view the menu</a>
     </div>
   </div>
@@ -599,7 +604,6 @@
           class="btn btn-black btn-left js-open-modal"
           type="button"
           data-modal="room"
-          data-modal-room-hot-open
         >
           Book a room
         </button>
@@ -718,201 +722,84 @@
 </footer>
 
 
-    <div class="backdrop is-hidden" data-modal-hero-table data-modal-rest-table data-modal-page-rest-table
-  data-modal-page-rest-menu-table data-modal-page-rest-menu-slick-table>
-  <div class="modal">
-    <div class="modal-cont modal-close-cross">
-      <button type="button" data-modal-table-hero-close data-modal-table-page-rest-close class="modal-close">
-
-        <svg class="modal-icon-cross" width="28" height="28">
-          <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
-        </svg>
-    <div class="modal-forms-1">
-      <div class="modal-forms-cont">
-      <form class="modal-list">
-        <label class="modal-lable"></label>
-        <div class="input-wrap">
-          <input 
-          type="text" 
-          name="name" 
-          placeholder="Your name" class="modal-input" 
-          required minlength="3">
-      <p class="modal-title">BOOK A TABLE</p>
-
-      <div class="modal-forms ">
-        <div class="modal-forms-cont">
-          <div class="modal-list">
-
-            <div class="input-wrap">
-              <input type="text" name="name" placeholder="Your name" class="modal-input" required minlength="3" />
-            </div>
-            <p class="folse-plhpld">Who should book a table for?</p>
-          </div>
-
-          <div class="modal-forms-cont">
-            <div class="modal-list modal-input-people">
-
-              <div class="input-wrap">
-                <select id="Numb-people" name="Numb-people" class="modal-input" required>
-                  <option value="" selected>
-                    NUMBER OF PEOPLE
-                  </option>
-                  
-                  <option  value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
-                  <option value="four">4</option>
-                  <option value="five">5</option>
-                  <option value="six">6</option>
-                  <option value="seven">7</option>
-                  <option value="eight">8</option>
-                  <option value="big">Wedding</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal-forms-2">
-            <div class="modal-forms-cont">
-              <div class="modal-list">
-
-                <div class="input-wrap">
-                  <input type="date" value="" class="input-txt" id="date" aria-required="true" aria-invalid="false"
-                    placeholder="TODAY" onchange="this.className=(this.value!=''?'has-value':'')" />
-                </div>
-                <p class="folse-plhpld">What date to book?</p>
-              </div>
-            </div>
-
-            <div class="modal-forms-cont">
-              <div class="modal-list">
-                <!-- <label class="modal-list"></label> -->
-                <div class="input-wrap">
-                  <input type="tel" name="phone" placeholder="+ 38 ( )" class="modal-input" required />
-                </div>
-                <p class="folse-plhpld">Phone number</p>
-              </div>
-            </div>
-          </div>
-          <div class="modal-btn-cont">
-            <button type="submit" class="btn btn-black modal-btn">
-              <span class="text-btn">MAKE A RESERVATION</span>
-            </button>
-          </div>
-      <p class="modal-title">BOOK A TABLE</p>
-
-      <div class="modal-forms ">
-        <div class="modal-forms-cont">
-          <div class="modal-list">
-
-            <div class="input-wrap">
-              <input type="text" name="name" placeholder="Your name" class="modal-input" required minlength="3" />
-            </div>
-            <p class="folse-plhpld">Who should book a table for?</p>
-          </div>
-
-          <div class="modal-forms-cont">
-            <div class="modal-list modal-input-people">
-
-              <div class="input-wrap">
-                <select id="Numb-people" name="Numb-people" class="modal-input" required>
-                  <option value="" selected>
-                    NUMBER OF PEOPLE
-                  </option>
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
-                  <option value="four">4</option>
-                  <option value="five">5</option>
-                  <option value="six">6</option>
-                  <option value="seven">7</option>
-                  <option value="eight">8</option>
-                  <option value="big">Wedding</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal-forms-2">
-            <div class="modal-forms-cont">
-              <div class="modal-list">
-
-                <div class="input-wrap">
-                  <input type="date" value="" class="input-txt" id="date" aria-required="true" aria-invalid="false"
-                    placeholder="TODAY" onchange="this.className=(this.value!=''?'has-value':'')" />
-                </div>
-                <p class="folse-plhpld">What date to book?</p>
-              </div>
-            </div>
-
-            <div class="modal-forms-cont">
-              <div class="modal-list">
-                <!-- <label class="modal-list"></label> -->
-                <div class="input-wrap">
-                  <input type="tel" name="phone" placeholder="+ 38 ( )" class="modal-input" required />
-                </div>
-                <p class="folse-plhpld">Phone number</p>
-              </div>
-            </div>
-          </div>
-          <div class="modal-btn-cont">
-            <button type="submit" class="btn btn-black modal-btn">
-              <span class="text-btn">MAKE A RESERVATION</span>
-            </button>
-          </div>
-
+    <div class="backdrops overlay js-overlay-modal">
+  <div class="modal modal-price" data-modal="price">
+    <button type="button" class="modal-close-btn js-modal-close">
+      <svg class="close-svg svg-position">
+        <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="title-modal-pr">prices per room</h2>
+    <p class="text-modal-pr">double suite</p>
+    <form class="modal-price-form">
+      <div class="flex-form">
+        <div class="form-night">
+          <select class="modal-input nights" id="quickly" name="quickly">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <label for="quickly" class="label-prices">number of nights</label>
+        </div>
+        <div class="form-number">
+          <input
+            type="number"
+            class="modal-input nights"
+            name="uah"
+            min="1000"
+            value="1000"
+            id="uah"
+            placeholder=""
+          />
+          <label for="uah" class="label-prices">uah</label>
         </div>
       </div>
-      <script src="./js/modal-table.js"></script>
-    </div>
+      <div class="btn-f-form">
+        <button class="btn btn-black btn-price" type="submit">
+          make a reservation
+        </button>
+      </div>
+    </form>
   </div>
-</div>
-    <div class="backdrop is-hidden"
-data-modal-room
-data-modal-hot-room
-data-modal-page-hot-room
-data-modal-page-page-room-room
-data-modal-am-room
->
-  <div class="modal" data-modal="room">
+  <div class="modal modal-room" data-modal="room">
     <div class="modal-container container-abs">
-      <button class="modal-close-btn btn-frame "
-      data-modal-room-close
-      data-modal-room-page-hot-close
-      data-modal-room-page-room-close
-      data-modal-room-am-close
-      >
-        <svg class="close-svg svg-position" >
+      <button type="button" class="modal-close-btn btn-frame js-modal-close">
+        <svg class="close-svg svg-position">
           <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
         </svg>
       </button>
       <p class="modal-name tittle-modal-room">
-        BOOK <span class="italic-room">A ROOM</span></p>
+        BOOK <span class="italic-room">A ROOM</span>
+      </p>
 
       <div class="modal-form">
         <div class="list-room">
           <div class="window-block">
             <label class="modal-label-room"></label>
             <div class="input-wrap-room">
-            <input class="modal-text-room" placeholder="Your name" required minlength="3">
-              </div>
-            <p class="text-comment" id="name"
-              >Who should book a table for?
-          </p>
+              <input
+                class="modal-text-room"
+                placeholder="Your name"
+                required
+                minlength="3"
+              />
+            </div>
+            <p class="text-comment" id="name">Who should book a table for?</p>
           </div>
 
           <div class="window-block">
             <div class="">
-            <!-- <laber class="modal-text" for="tel"> </laber> -->
+              <!-- <laber class="modal-text" for="tel"> </laber> -->
             </div>
             <div class="input-wrap-room">
-            <input
-              class="modal-input-room bgr-room"
-              id="tel"
-              type="tel"
-              placeholder="+ 38 ( )"
-              name="phone"
-              required
+              <input
+                class="modal-input-room bgr-room"
+                id="tel"
+                type="tel"
+                placeholder="+ 38 ( )"
+                name="phone"
+                required
               />
             </div>
             <p class="text-comment" id="tel">Phone number</p>
@@ -920,56 +807,261 @@ data-modal-am-room
 
           <div class="window-block-svg">
             <div class="">
-            <laber class="modal-text"></laber>
+              <laber class="modal-text"></laber>
             </div>
             <div class="input-wrap-room">
-            <select id="Numb-people" name="Numb-people" class="modal-input-room" placeholder="" required>
-              <option value="1" class="Numb-people-list-room">
-                TODAY
-              </option>
-              <option value="1">Tomorrow</option>
-              <option value="1">Yesterday</option>
-              <option value="1">Next week</option>
-              <option value="1">Last week</option>
-            </select>
-          </div>
+              <select
+                id="Numb-people"
+                name="Numb-people"
+                class="modal-input-room"
+                placeholder=""
+                required
+              >
+                <option value="1" class="Numb-people-list-room">TODAY</option>
+                <option value="1">Tomorrow</option>
+                <option value="1">Yesterday</option>
+                <option value="1">Next week</option>
+                <option value="1">Last week</option>
+              </select>
+            </div>
             <label class="text-comment">Check-in date</label>
           </div>
           <div class="window-block-svg">
             <div class="">
-            <laber class="modal-text bgr-room"></laber>
-            <div class="input-wrap-room">
-            <input
-              class="modal-input bgr-room-date"
-              type="date"
-              placeholder=" "
-            />
-             </div>
-            <p class="text-comment">Check-in date</p>
-         </div>
-
-          <div class="window-block-svg">
-            <div class="">
-            <laber class="modal-text"></laber>
+              <laber class="modal-text bgr-room"></laber>
+              <div class="input-wrap-room">
+                <input
+                  class="modal-input bgr-room-date"
+                  type="date"
+                  placeholder=" "
+                />
+              </div>
+              <p class="text-comment">Check-in date</p>
             </div>
-            <div class="input-wrap-room">
-              <select id="Numb-people" name="Numb-people" class="modal-input-room" placeholder="">
-                <option value="1" class="Numb-people-list-room">
-                  DOUBLE SUITE
-                </option>
-              <option value="1">Single suite</option>
-              <option value="1">Double economy room</option>
-              <option value="1">Single economy room</option>
-            </select>
+
+            <div class="window-block-svg">
+              <div class="">
+                <laber class="modal-text"></laber>
+              </div>
+              <div class="input-wrap-room">
+                <select
+                  id="Numb-people"
+                  name="Numb-people"
+                  class="modal-input-room"
+                  placeholder=""
+                >
+                  <option value="1" class="Numb-people-list-room">
+                    DOUBLE SUITE
+                  </option>
+                  <option value="1">Single suite</option>
+                  <option value="1">Double economy room</option>
+                  <option value="1">Single economy room</option>
+                </select>
+              </div>
+              <label class="text-comment">Number category</label>
+            </div>
           </div>
-            <label class="text-comment">Number category</label>
+          <div class="btn-modal-room-center">
+            <button class="btn btn-black modal-btn modal-block" type="submit">
+              SMAKE A RESERVATION
+            </button>
           </div>
         </div>
-        <div class="btn-modal-room-center">
-          <button class="btn btn-black modal-btn modal-block" type="submit">
-            SMAKE A RESERVATION
-          </button>
-        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-table" data-modal="table">
+    <div class="modal-cont modal-close-cross">
+      <button type="button" class="modal-close js-modal-close">
+        <svg class="modal-icon-cross" width="28" height="28">
+          <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-forms-1">
+      <div class="modal-forms-cont">
+        <form class="modal-list">
+          <label class="modal-lable"></label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="modal-input"
+              required
+              minlength="3"
+            />
+            <p class="modal-title">BOOK A TABLE</p>
+
+            <div class="modal-forms">
+              <div class="modal-forms-cont">
+                <div class="modal-list">
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your name"
+                      class="modal-input"
+                      required
+                      minlength="3"
+                    />
+                  </div>
+                  <p class="folse-plhpld">Who should book a table for?</p>
+                </div>
+
+                <div class="modal-forms-cont">
+                  <div class="modal-list modal-input-people">
+                    <div class="input-wrap">
+                      <select
+                        id="Numb-people"
+                        name="Numb-people"
+                        class="modal-input"
+                        required
+                      >
+                        <option value="" selected>NUMBER OF PEOPLE</option>
+
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="big">Wedding</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-forms-2">
+                  <div class="modal-forms-cont">
+                    <div class="modal-list">
+                      <div class="input-wrap">
+                        <input
+                          type="date"
+                          value=""
+                          class="input-txt"
+                          id="date"
+                          aria-required="true"
+                          aria-invalid="false"
+                          placeholder="TODAY"
+                          onchange="this.className=(this.value!=''?'has-value':'')"
+                        />
+                      </div>
+                      <p class="folse-plhpld">What date to book?</p>
+                    </div>
+                  </div>
+
+                  <div class="modal-forms-cont">
+                    <div class="modal-list">
+                      <!-- <label class="modal-list"></label> -->
+                      <div class="input-wrap">
+                        <input
+                          type="tel"
+                          name="phone"
+                          placeholder="+ 38 ( )"
+                          class="modal-input"
+                          required
+                        />
+                      </div>
+                      <p class="folse-plhpld">Phone number</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-btn-cont">
+                  <button type="submit" class="btn btn-black modal-btn">
+                    <span class="text-btn">MAKE A RESERVATION</span>
+                  </button>
+                </div>
+                <p class="modal-title">BOOK A TABLE</p>
+
+                <div class="modal-forms">
+                  <div class="modal-forms-cont">
+                    <div class="modal-list">
+                      <div class="input-wrap">
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Your name"
+                          class="modal-input"
+                          required
+                          minlength="3"
+                        />
+                      </div>
+                      <p class="folse-plhpld">Who should book a table for?</p>
+                    </div>
+
+                    <div class="modal-forms-cont">
+                      <div class="modal-list modal-input-people">
+                        <div class="input-wrap">
+                          <select
+                            id="Numb-people"
+                            name="Numb-people"
+                            class="modal-input"
+                            required
+                          >
+                            <option value="" selected>NUMBER OF PEOPLE</option>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                            <option value="seven">7</option>
+                            <option value="eight">8</option>
+                            <option value="big">Wedding</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-forms-2">
+                      <div class="modal-forms-cont">
+                        <div class="modal-list">
+                          <div class="input-wrap">
+                            <input
+                              type="date"
+                              value=""
+                              class="input-txt"
+                              id="date"
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="TODAY"
+                              onchange="this.className=(this.value!=''?'has-value':'')"
+                            />
+                          </div>
+                          <p class="folse-plhpld">What date to book?</p>
+                        </div>
+                      </div>
+
+                      <div class="modal-forms-cont">
+                        <div class="modal-list">
+                          <!-- <label class="modal-list"></label> -->
+                          <div class="input-wrap">
+                            <input
+                              type="tel"
+                              name="phone"
+                              placeholder="+ 38 ( )"
+                              class="modal-input"
+                              required
+                            />
+                          </div>
+                          <p class="folse-plhpld">Phone number</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-btn-cont">
+                      <button type="submit" class="btn btn-black modal-btn">
+                        <span class="text-btn">MAKE A RESERVATION</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -977,12 +1069,6 @@ data-modal-am-room
 
 
     
-    
-    
-    
-    
-    
-
     <!-- Slick -->
     <script
       type="text/javascript"
