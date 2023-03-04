@@ -25,7 +25,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <script type="module" crossorigin src="/team15-mimino/assets/modals-b3a4ec19.js"></script>
-    <link rel="stylesheet" href="/team15-mimino/assets/modals-73075251.css">
+    <link rel="stylesheet" href="/team15-mimino/assets/modals-377a4889.css">
     <link rel="stylesheet" href="/team15-mimino/assets/hotel-644dc04a.css">
   </head>
   <body>
@@ -766,7 +766,7 @@
 </footer>
 
 
-    <div class="backdrops overlay js-overlay-modal">
+    <div class="overlay js-overlay-modal">
   <div class="modal modal-price" data-modal="price">
     <button type="button" class="modal-close-btn js-modal-close">
       <svg class="close-svg svg-position">
@@ -807,9 +807,9 @@
     </form>
   </div>
   <div class="modal modal-room" data-modal="room">
-    <div class="modal-container container-abs">
+    <div class="container-abs">
       <button type="button" class="modal-close-btn btn-frame js-modal-close">
-        <svg class="close-svg svg-position">
+        <svg class="close-svg svg-position" width="28" height="28">
           <use href="/team15-mimino/assets/sprayt-1c58e7ea.svg#icon-close"></use>
         </svg>
       </button>
@@ -833,9 +833,7 @@
           </div>
 
           <div class="window-block">
-            <div class="">
-              <!-- <laber class="modal-text" for="tel"> </laber> -->
-            </div>
+            <div class=""></div>
             <div class="input-wrap-room">
               <input
                 class="modal-input-room bgr-room"
@@ -849,7 +847,7 @@
             <p class="text-comment" id="tel">Phone number</p>
           </div>
 
-          <div class="window-block-svg">
+          <div class="window-block">
             <div class="">
               <laber class="modal-text"></laber>
             </div>
@@ -870,46 +868,49 @@
             </div>
             <label class="text-comment">Check-in date</label>
           </div>
-          <div class="window-block-svg">
-            <div class="">
-              <laber class="modal-text bgr-room"></laber>
+          <div class="window-block">
+            <div class="input-wrap-room-2">
               <div class="input-wrap-room">
                 <input
                   class="modal-input bgr-room-date"
                   type="date"
-                  placeholder=" "
+                  id="date"
+                  aria-required="true"
+                  aria-invalid="false"
+                  placeholder=""
+                  onchange="this.className=(this.value!=''?'has-value':'')"
+                  value=""
                 />
               </div>
               <p class="text-comment">Check-in date</p>
             </div>
-
-            <div class="window-block-svg">
-              <div class="">
-                <laber class="modal-text"></laber>
-              </div>
-              <div class="input-wrap-room">
-                <select
-                  id="Numb-people"
-                  name="Numb-people"
-                  class="modal-input-room"
-                  placeholder=""
-                >
-                  <option value="1" class="Numb-people-list-room">
-                    DOUBLE SUITE
-                  </option>
-                  <option value="1">Single suite</option>
-                  <option value="1">Double economy room</option>
-                  <option value="1">Single economy room</option>
-                </select>
-              </div>
-              <label class="text-comment">Number category</label>
+          </div>
+          <div class="window-block">
+            <div class="">
+              <laber class="modal-text"></laber>
             </div>
+            <div class="input-wrap-room">
+              <select
+                id="Numb-people"
+                name="Numb-people"
+                class="modal-input-room"
+                placeholder=""
+              >
+                <option value="1" class="Numb-people-list-room">
+                  DOUBLE SUITE
+                </option>
+                <option value="1">Single suite</option>
+                <option value="1">Double economy room</option>
+                <option value="1">Single economy room</option>
+              </select>
+            </div>
+            <label class="text-comment">Number category</label>
           </div>
-          <div class="btn-modal-room-center">
-            <button class="btn btn-black modal-btn modal-block" type="submit">
-              SMAKE A RESERVATION
-            </button>
-          </div>
+        </div>
+        <div class="btn-modal-room-center">
+          <button class="btn btn-black modal-btn modal-block" type="submit">
+            SMAKE A RESERVATION
+          </button>
         </div>
       </div>
     </div>
