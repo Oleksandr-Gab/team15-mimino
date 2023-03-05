@@ -18,20 +18,22 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-  z-index: 1;
+  position: absolute;
+  z-index: 30;
   top: 50%;
   left: 50%;
+  background-color: var(--brand-color);
   transform: translate(-50%, -50%) scale(1);
-  width: 100%;
-  min-height: 576px;
-  background-color: #121212;
+  background-color: var(--brand-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px 24px 40px 24px;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 24px 24px 40px 24px;
+  width: 100%;
+  color: var(--light-color);
 }
 
 /* Стили для активных классов подложки и окна */
@@ -39,4 +41,52 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.title-modal {
+  font-style: italic;
+  font-size: 28px;
+  line-height: calc(38 / 28);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+
+.modal-close-btn {
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:active,
+.modal-close-btn:hover {
+  transform: scale(0.8);
+}
+
+@media screen and (min-width: 375px) {
+  .modal {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 628px;
+    padding: 32px 32px 60px 32px;
+  }
+  .title-modal {
+    font-size: 36px;
+  }
+  .modal-close-btn {
+    right: 33px;
+    top: 33px;
+  }
 }

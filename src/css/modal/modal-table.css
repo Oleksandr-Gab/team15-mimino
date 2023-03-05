@@ -1,23 +1,9 @@
-.modal-cont {
-  width: 100%;
-}
-
-.modal-close {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #11121a;
-  display: block;
-  margin-left: auto;
-  position: absolute;
-  right: 0;
-  border-radius: 50%;
-}
-
-.modal-close:active,
-.modal-close:hover {
-  transform: scale(0.8);
-}
-
 .modal-forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -25,7 +11,6 @@
 .input-wrap {
   display: flex;
   align-items: center;
-
   position: relative;
 }
 
@@ -39,17 +24,6 @@
   bottom: 0px;
   z-index: 1;
 }
-.folse-plhpld::before {
-  content: '';
-  width: 100%;
-  position: absolute;
-  height: 0px;
-  border: 0.8px solid rgba(247, 247, 247, 0.2);
-  border-radius: 68px;
-  bottom: 0px;
-  z-index: 1;
-}
-
 .modal-lable {
   font-weight: 500;
   font-size: 14px;
@@ -80,10 +54,6 @@
   color: #d8d7d7;
 }
 
-.modal-forms-cont {
-  display: flex;
-  flex-direction: column;
-}
 .modal-list {
   display: flex;
   flex-direction: column;
@@ -245,6 +215,7 @@ input#tel {
 }
 
 .modal-btn {
+  margin: 0 auto;
   transition-property: transform;
   transition-duration: 600ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -276,18 +247,22 @@ input#tel {
 /* Mobile */ /* Mobile */ /* Mobile */
 
 @media screen and (min-width: 375px) {
-  .modal {
-    width: 335px;
-  }
 }
 /* Tablet */ /* Tablet */ /* Tablet */
 @media screen and (min-width: 768px) {
+  .modal-forms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+  }
+
+  .modal-list {
+    width: calc((100% - 32px) / 2);
+  }
+
   .modal-tab-cont {
     display: flex;
-  }
-  .modal {
-    width: 628px;
-    padding: 32px 32px 60px 32px;
   }
   .modal-forms-1 {
     display: flex;
@@ -323,10 +298,6 @@ input#tel {
 }
 /* Desktop */ /* Desktop */ /* Desktop */
 @media screen and (min-width: 1440px) {
-  .modal {
-    width: 628px;
-  }
-
   .modal-btn {
     width: 444px;
   }
