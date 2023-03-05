@@ -13,6 +13,9 @@
   text-transform: uppercase;
   color: #121212;
 }
+
+
+
 .text-rest {
   width: 221px;
   font-weight: 500;
@@ -61,6 +64,54 @@
   gap: 12px;
   margin-top: 82px;
 }
+
+
+.rest-slick-icons-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  gap: 20px;
+  height: 24px;
+  margin-bottom: 40px;
+}
+
+.rest-slick-icons-prevArrow {
+  stroke: #130a0a;
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 24px;
+  width: 24px;
+}
+
+.rest-slick-icons-prevArrow:hover{
+cursor: pointer;
+}
+.rest-slick-icons-prevArrow:active{
+transform: scale(0.8);
+cursor: pointer;
+}
+
+.rest-slick-icons-nextArrow {
+  stroke: #1a1414;
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0 32, 1.275);
+  height: 24px;
+  width: 24px;
+  
+}
+
+.rest-slick-icons-nextArrow:hover{
+  cursor: pointer;
+}
+.rest-slick-icons-nextArrow:active{
+transform: scale(0.8);
+cursor: pointer;
+}
+
 
 @media screen and (min-width: 375px) {
 }
