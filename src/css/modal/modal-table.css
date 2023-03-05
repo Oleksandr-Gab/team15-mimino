@@ -215,6 +215,7 @@ input#tel {
 }
 
 .modal-btn {
+  margin-top: 40px;
   margin: 0 auto;
   transition-property: transform;
   transition-duration: 600ms;
@@ -282,6 +283,7 @@ input#tel {
   }
   .modal-btn {
     width: 399px;
+    margin-top: 80px;
   }
   .modal-forms-cont {
     width: 100%;
